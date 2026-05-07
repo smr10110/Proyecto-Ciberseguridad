@@ -1,0 +1,32 @@
+{
+    "name": "Security Analyzer Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "."
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true,
+                "notebook.formatOnSave.enabled": true,
+                "jupyter.notebook.defaultKernel": "Python (security-analyzer)",
+                "jupyter.kernels.filter": [
+                    {
+                        "name": "security-analyzer"
+                    }
+                ]
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.black-formatter",
+                "ms-toolsai.jupyter",
+                "ms-vscode.makefile-tools"
+            ]
+        }
+    },
+    "postCreateCommand": "uv sync && uv run python -m ipykernel install --user --name security-analyzer --display-name 'Python (security-analyzer)' && grype db update || true && cd visualizer && npm install",
+    "remoteUser": "vscode"
+}
