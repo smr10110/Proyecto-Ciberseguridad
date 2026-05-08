@@ -1,0 +1,58 @@
+[
+  {
+    "repo": "distil-whisper",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/distil-whisper-grype.json",
+    "timestamp": "2026-05-08T02:07:18.805468"
+  },
+  {
+    "repo": "alignment-handbook",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/alignment-handbook-grype.json",
+    "timestamp": "2026-05-08T02:07:18.842089"
+  },
+  {
+    "repo": "accelerate",
+    "status": "success",
+    "vulnerabilities": 2,
+    "output_file": "data/results/accelerate-grype.json",
+    "timestamp": "2026-05-08T02:07:19.247491"
+  },
+  {
+    "repo": "autotrain-advanced",
+    "status": "success",
+    "vulnerabilities": 43,
+    "output_file": "data/results/autotrain-advanced-grype.json",
+    "timestamp": "2026-05-08T02:07:19.309344"
+  },
+  {
+    "repo": "ml-intern",
+    "status": "success",
+    "vulnerabilities": 50,
+    "output_file": "data/results/ml-intern-grype.json",
+    "timestamp": "2026-05-08T02:07:19.505778"
+  },
+  {
+    "repo": "nanoVLM",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/nanoVLM-grype.json",
+    "timestamp": "2026-05-08T02:07:19.729095"
+  },
+  {
+    "repo": "parler-tts",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/parler-tts-grype.json",
+    "timestamp": "2026-05-08T02:07:19.746606"
+  },
+  {
+    "repo": "speech-to-speech",
+    "status": "success",
+    "vulnerabilities": 2,
+    "output_file": "data/results/speech-to-speech-grype.json",
+    "timestamp": "2026-05-08T02:07:20.127736"
+  }
+]

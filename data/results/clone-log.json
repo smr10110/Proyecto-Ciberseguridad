@@ -1,0 +1,54 @@
+{
+  "timestamp": "2026-05-08T02:06:41.382247",
+  "total": 8,
+  "results": [
+    {
+      "repo": "parler-tts",
+      "url": "https://github.com/huggingface/parler-tts",
+      "status": "cloned",
+      "path": "data/repos/parler-tts"
+    },
+    {
+      "repo": "alignment-handbook",
+      "url": "https://github.com/huggingface/alignment-handbook",
+      "status": "cloned",
+      "path": "data/repos/alignment-handbook"
+    },
+    {
+      "repo": "ml-intern",
+      "url": "https://github.com/huggingface/ml-intern",
+      "status": "cloned",
+      "path": "data/repos/ml-intern"
+    },
+    {
+      "repo": "nanoVLM",
+      "url": "https://github.com/huggingface/nanoVLM",
+      "status": "cloned",
+      "path": "data/repos/nanoVLM"
+    },
+    {
+      "repo": "speech-to-speech",
+      "url": "https://github.com/huggingface/speech-to-speech",
+      "status": "cloned",
+      "path": "data/repos/speech-to-speech"
+    },
+    {
+      "repo": "accelerate",
+      "url": "https://github.com/huggingface/accelerate",
+      "status": "cloned",
+      "path": "data/repos/accelerate"
+    },
+    {
+      "repo": "distil-whisper",
+      "url": "https://github.com/huggingface/distil-whisper",
+      "status": "cloned",
+      "path": "data/repos/distil-whisper"
+    },
+    {
+      "repo": "autotrain-advanced",
+      "url": "https://github.com/huggingface/autotrain-advanced",
+      "status": "cloned",
+      "path": "data/repos/autotrain-advanced"
+    }
+  ]
+}

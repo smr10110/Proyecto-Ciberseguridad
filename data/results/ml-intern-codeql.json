@@ -1,0 +1,257 @@
+{
+  "findings": [
+    {
+      "rule_id": "py/clear-text-storage-sensitive-data",
+      "severity": "error",
+      "name": "Clear-text storage of sensitive information",
+      "description": "This expression stores [sensitive data (password)](1) as clear text.",
+      "locations": [
+        {
+          "file": "backend/routes/auth.py",
+          "startLine": 177,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/clear-text-storage-sensitive-data",
+      "severity": "error",
+      "name": "Clear-text storage of sensitive information",
+      "description": "This expression stores [sensitive data (secret)](1) as clear text.\nThis expression stores [sensitive data (secret)](2) as clear text.\nThis expression stores [sensitive data (secret)](3) as clear text.",
+      "locations": [
+        {
+          "file": "agent/core/session_uploader.py",
+          "startLine": 290,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/weak-sensitive-data-hashing",
+      "severity": "warning",
+      "name": "Use of a broken or weak cryptographic hashing algorithm on sensitive data",
+      "description": "[Sensitive data (password)](1) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.\n[Sensitive data (password)](2) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.\n[Sensitive data (password)](3) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.",
+      "locations": [
+        {
+          "file": "backend/dependencies.py",
+          "startLine": 89,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/weak-sensitive-data-hashing",
+      "severity": "warning",
+      "name": "Use of a broken or weak cryptographic hashing algorithm on sensitive data",
+      "description": "[Sensitive data (id)](1) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (id)](2) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](3) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](4) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](5) is used in a hashing algorithm (SHA1) that is insecure.",
+      "locations": [
+        {
+          "file": "agent/core/session_uploader.py",
+          "startLine": 94,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/jinja2/autoescape-false",
+      "severity": "error",
+      "name": "Jinja2 templating with autoescape=False",
+      "description": "Using jinja2 templates with autoescape=False can potentially allow XSS attacks.",
+      "locations": [
+        {
+          "file": "agent/context_manager/manager.py",
+          "startLine": 230,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).",
+      "locations": [
+        {
+          "file": "backend/routes/agent.py",
+          "startLine": 146,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).",
+      "locations": [
+        {
+          "file": "backend/routes/agent.py",
+          "startLine": 474,
+          "endLine": 475
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).",
+      "locations": [
+        {
+          "file": "backend/routes/agent.py",
+          "startLine": 518,
+          "endLine": 519
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 449,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 479,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 497,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).\nThis log entry depends on a [user-provided value](18).\nThis log entry depends on a [user-provided value](19).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 498,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 508,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 517,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 708,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).\nThis log entry depends on a [user-provided value](5).\nThis log entry depends on a [user-provided value](6).\nThis log entry depends on a [user-provided value](7).\nThis log entry depends on a [user-provided value](8).\nThis log entry depends on a [user-provided value](9).\nThis log entry depends on a [user-provided value](10).\nThis log entry depends on a [user-provided value](11).\nThis log entry depends on a [user-provided value](12).\nThis log entry depends on a [user-provided value](13).\nThis log entry depends on a [user-provided value](14).\nThis log entry depends on a [user-provided value](15).\nThis log entry depends on a [user-provided value](16).\nThis log entry depends on a [user-provided value](17).\nThis log entry depends on a [user-provided value](18).\nThis log entry depends on a [user-provided value](19).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 708,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 795,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/log-injection",
+      "severity": "error",
+      "name": "Log Injection",
+      "description": "This log entry depends on a [user-provided value](1).\nThis log entry depends on a [user-provided value](2).\nThis log entry depends on a [user-provided value](3).\nThis log entry depends on a [user-provided value](4).",
+      "locations": [
+        {
+          "file": "backend/session_manager.py",
+          "startLine": 1030,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    }
+  ],
+  "total": 18
+}
