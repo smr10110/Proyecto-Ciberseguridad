@@ -1,36 +1,48 @@
 {
-  "timestamp": "2026-05-08T02:52:36.121217",
-  "total": 5,
+  "timestamp": "2026-05-08T04:25:04.671451",
+  "total": 7,
   "results": [
     {
-      "repo": "transformers",
-      "url": "https://github.com/huggingface/transformers",
-      "status": "update_failed",
-      "path": "data/repos/transformers"
+      "repo": "lerobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "status": "updated",
+      "path": "data/repos/lerobot"
     },
     {
-      "repo": "open-r1",
-      "url": "https://github.com/huggingface/open-r1",
-      "status": "update_failed",
-      "path": "data/repos/open-r1"
+      "repo": "sentence-transformers",
+      "url": "https://github.com/huggingface/sentence-transformers",
+      "status": "updated",
+      "path": "data/repos/sentence-transformers"
     },
     {
-      "repo": "pytorch-image-models",
-      "url": "https://github.com/huggingface/pytorch-image-models",
-      "status": "update_failed",
-      "path": "data/repos/pytorch-image-models"
+      "repo": "trl",
+      "url": "https://github.com/huggingface/trl",
+      "status": "updated",
+      "path": "data/repos/trl"
     },
     {
-      "repo": "diffusers",
-      "url": "https://github.com/huggingface/diffusers",
-      "status": "update_failed",
-      "path": "data/repos/diffusers"
+      "repo": "datasets",
+      "url": "https://github.com/huggingface/datasets",
+      "status": "updated",
+      "path": "data/repos/datasets"
     },
     {
-      "repo": "smolagents",
-      "url": "https://github.com/huggingface/smolagents",
-      "status": "update_failed",
-      "path": "data/repos/smolagents"
+      "repo": "peft",
+      "url": "https://github.com/huggingface/peft",
+      "status": "updated",
+      "path": "data/repos/peft"
+    },
+    {
+      "repo": "text-generation-inference",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "status": "updated",
+      "path": "data/repos/text-generation-inference"
+    },
+    {
+      "repo": "skills",
+      "url": "https://github.com/huggingface/skills",
+      "status": "updated",
+      "path": "data/repos/skills"
     }
   ]
 }

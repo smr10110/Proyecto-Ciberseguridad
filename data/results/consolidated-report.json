@@ -1,369 +1,171 @@
 {
-  "generated_at": "2026-05-08T02:55:16.461842",
+  "generated_at": "2026-05-08T04:56:20.327317",
   "sbom": [
     {
-      "repo": "alignment-handbook",
+      "repo": "sentence-transformers",
       "status": "success",
-      "output_file": "data/results/alignment-handbook-sbom.json",
-      "timestamp": "2026-05-08T02:52:57.955150"
-    },
-    {
-      "repo": "autotrain-advanced",
-      "status": "success",
-      "output_file": "data/results/autotrain-advanced-sbom.json",
-      "timestamp": "2026-05-08T02:52:57.974674"
-    },
-    {
-      "repo": "accelerate",
-      "status": "success",
-      "output_file": "data/results/accelerate-sbom.json",
-      "timestamp": "2026-05-08T02:52:57.977380"
-    },
-    {
-      "repo": "diffusers",
-      "status": "success",
-      "output_file": "data/results/diffusers-sbom.json",
-      "timestamp": "2026-05-08T02:52:58.124598"
-    },
-    {
-      "repo": "datasets",
-      "status": "success",
-      "output_file": "data/results/datasets-sbom.json",
-      "timestamp": "2026-05-08T02:52:58.193978"
-    },
-    {
-      "repo": "lerobot",
-      "status": "success",
-      "output_file": "data/results/lerobot-sbom.json",
-      "timestamp": "2026-05-08T02:53:00.472319"
-    },
-    {
-      "repo": "nanoVLM",
-      "status": "success",
-      "output_file": "data/results/nanoVLM-sbom.json",
-      "timestamp": "2026-05-08T02:53:00.775797"
-    },
-    {
-      "repo": "ml-intern",
-      "status": "success",
-      "output_file": "data/results/ml-intern-sbom.json",
-      "timestamp": "2026-05-08T02:53:00.917163"
-    },
-    {
-      "repo": "distil-whisper",
-      "status": "success",
-      "output_file": "data/results/distil-whisper-sbom.json",
-      "timestamp": "2026-05-08T02:53:00.974754"
-    },
-    {
-      "repo": "open-r1",
-      "status": "success",
-      "output_file": "data/results/open-r1-sbom.json",
-      "timestamp": "2026-05-08T02:53:01.133830"
-    },
-    {
-      "repo": "parler-tts",
-      "status": "success",
-      "output_file": "data/results/parler-tts-sbom.json",
-      "timestamp": "2026-05-08T02:53:03.063075"
+      "output_file": "data/results/sentence-transformers-sbom.json",
+      "timestamp": "2026-05-08T04:26:26.547490"
     },
     {
       "repo": "peft",
       "status": "success",
       "output_file": "data/results/peft-sbom.json",
-      "timestamp": "2026-05-08T02:53:03.395288"
+      "timestamp": "2026-05-08T04:26:30.985055"
     },
     {
-      "repo": "pytorch-image-models",
+      "repo": "datasets",
       "status": "success",
-      "output_file": "data/results/pytorch-image-models-sbom.json",
-      "timestamp": "2026-05-08T02:53:03.672329"
+      "output_file": "data/results/datasets-sbom.json",
+      "timestamp": "2026-05-08T04:26:33.039901"
     },
     {
       "repo": "skills",
       "status": "success",
       "output_file": "data/results/skills-sbom.json",
-      "timestamp": "2026-05-08T02:53:03.724458"
+      "timestamp": "2026-05-08T04:26:39.118348"
     },
     {
-      "repo": "sentence-transformers",
+      "repo": "lerobot",
       "status": "success",
-      "output_file": "data/results/sentence-transformers-sbom.json",
-      "timestamp": "2026-05-08T02:53:03.732355"
-    },
-    {
-      "repo": "smolagents",
-      "status": "success",
-      "output_file": "data/results/smolagents-sbom.json",
-      "timestamp": "2026-05-08T02:53:05.650514"
-    },
-    {
-      "repo": "speech-to-speech",
-      "status": "success",
-      "output_file": "data/results/speech-to-speech-sbom.json",
-      "timestamp": "2026-05-08T02:53:05.803277"
-    },
-    {
-      "repo": "text-generation-inference",
-      "status": "success",
-      "output_file": "data/results/text-generation-inference-sbom.json",
-      "timestamp": "2026-05-08T02:53:06.122032"
-    },
-    {
-      "repo": "transformers",
-      "status": "success",
-      "output_file": "data/results/transformers-sbom.json",
-      "timestamp": "2026-05-08T02:53:06.197368"
+      "output_file": "data/results/lerobot-sbom.json",
+      "timestamp": "2026-05-08T04:26:47.251839"
     },
     {
       "repo": "trl",
       "status": "success",
       "output_file": "data/results/trl-sbom.json",
-      "timestamp": "2026-05-08T02:53:06.331506"
+      "timestamp": "2026-05-08T04:27:13.761103"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "output_file": "data/results/text-generation-inference-sbom.json",
+      "timestamp": "2026-05-08T04:27:31.311956"
     }
   ],
   "grype": [
-    {
-      "repo": "datasets",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/datasets-grype.json",
-      "timestamp": "2026-05-08T02:54:32.688920"
-    },
-    {
-      "repo": "diffusers",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/diffusers-grype.json",
-      "timestamp": "2026-05-08T02:54:32.691289"
-    },
-    {
-      "repo": "alignment-handbook",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/alignment-handbook-grype.json",
-      "timestamp": "2026-05-08T02:54:32.697406"
-    },
-    {
-      "repo": "autotrain-advanced",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/autotrain-advanced-grype.json",
-      "timestamp": "2026-05-08T02:54:32.720684"
-    },
-    {
-      "repo": "accelerate",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/accelerate-grype.json",
-      "timestamp": "2026-05-08T02:54:32.736311"
-    },
-    {
-      "repo": "lerobot",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/lerobot-grype.json",
-      "timestamp": "2026-05-08T02:54:34.091657"
-    },
-    {
-      "repo": "ml-intern",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/ml-intern-grype.json",
-      "timestamp": "2026-05-08T02:54:34.127623"
-    },
-    {
-      "repo": "open-r1",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/open-r1-grype.json",
-      "timestamp": "2026-05-08T02:54:34.166510"
-    },
-    {
-      "repo": "nanoVLM",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/nanoVLM-grype.json",
-      "timestamp": "2026-05-08T02:54:34.186103"
-    },
-    {
-      "repo": "distil-whisper",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/distil-whisper-grype.json",
-      "timestamp": "2026-05-08T02:54:34.193945"
-    },
-    {
-      "repo": "peft",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/peft-grype.json",
-      "timestamp": "2026-05-08T02:54:35.505294"
-    },
-    {
-      "repo": "parler-tts",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/parler-tts-grype.json",
-      "timestamp": "2026-05-08T02:54:35.513099"
-    },
     {
       "repo": "sentence-transformers",
       "status": "success",
       "vulnerabilities": 0,
       "output_file": "data/results/sentence-transformers-grype.json",
-      "timestamp": "2026-05-08T02:54:35.606606"
+      "timestamp": "2026-05-08T04:29:55.968984"
     },
     {
-      "repo": "pytorch-image-models",
+      "repo": "peft",
       "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/pytorch-image-models-grype.json",
-      "timestamp": "2026-05-08T02:54:35.637824"
+      "vulnerabilities": 8,
+      "output_file": "data/results/peft-grype.json",
+      "timestamp": "2026-05-08T04:29:56.355265"
     },
     {
       "repo": "skills",
       "status": "success",
       "vulnerabilities": 0,
       "output_file": "data/results/skills-grype.json",
-      "timestamp": "2026-05-08T02:54:35.699241"
+      "timestamp": "2026-05-08T04:29:58.067308"
     },
     {
-      "repo": "smolagents",
+      "repo": "datasets",
       "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/smolagents-grype.json",
-      "timestamp": "2026-05-08T02:54:36.982417"
+      "vulnerabilities": 24,
+      "output_file": "data/results/datasets-grype.json",
+      "timestamp": "2026-05-08T04:29:59.410513"
     },
     {
-      "repo": "speech-to-speech",
+      "repo": "lerobot",
       "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/speech-to-speech-grype.json",
-      "timestamp": "2026-05-08T02:54:37.011113"
+      "vulnerabilities": 59,
+      "output_file": "data/results/lerobot-grype.json",
+      "timestamp": "2026-05-08T04:30:01.953432"
     },
     {
       "repo": "text-generation-inference",
       "status": "success",
-      "vulnerabilities": 0,
+      "vulnerabilities": 442,
       "output_file": "data/results/text-generation-inference-grype.json",
-      "timestamp": "2026-05-08T02:54:37.055289"
+      "timestamp": "2026-05-08T04:30:04.498735"
     },
     {
       "repo": "trl",
       "status": "success",
       "vulnerabilities": 0,
       "output_file": "data/results/trl-grype.json",
-      "timestamp": "2026-05-08T02:54:37.103023"
-    },
-    {
-      "repo": "transformers",
-      "status": "success",
-      "vulnerabilities": 0,
-      "output_file": "data/results/transformers-grype.json",
-      "timestamp": "2026-05-08T02:54:37.115869"
+      "timestamp": "2026-05-08T04:30:05.257246"
     }
   ],
   "codeql": [
     {
+      "repo": "skills",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 0,
+      "output_file": "data/results/skills-codeql.json",
+      "timestamp": "2026-05-08T04:40:39.227818"
+    },
+    {
       "repo": "datasets",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "diffusers",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "accelerate",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "autotrain-advanced",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "alignment-handbook",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "lerobot",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "nanoVLM",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "distil-whisper",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "ml-intern",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "open-r1",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "parler-tts",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "pytorch-image-models",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 3,
+      "output_file": "data/results/datasets-codeql.json",
+      "timestamp": "2026-05-08T04:43:55.701885"
     },
     {
       "repo": "peft",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "status": "error",
+      "errors": [
+        {
+          "language": "python",
+          "phase": "analyze",
+          "error": "Command failed with exit code 137: Running queries.\nNot caching stages during query-loading, since max heap size is only 1378 MB.\n[1/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-022/PathInjection.qlx.\n[2/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-094/CodeInjection.qlx.\n[3/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-918/FullServerSideRequestForgery.qlx.\n[4/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-327/BrokenCryptoAlgorithm.qlx.\n[5/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-327/InsecureProtocol.qlx.\n[6/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-327/WeakSensitiveDataHashing.qlx.\n[7/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-327/InsecureDefaultProtocol.qlx.\n[8/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-079/ReflectedXss.qlx.\n[9/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-215/FlaskDebug.qlx.\n[10/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-1004/NonHttpOnlyCookie.qlx.\n[11/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-312/CleartextLogging.qlx.\n[12/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-312/CleartextStorage.qlx.\n[13/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-614/InsecureCookie.qlx.\n[14/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-090/LdapInjection.qlx.\n[15/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-601/UrlRedirect.qlx.\n[16/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-020/IncompleteHostnameRegExp.qlx.\n[17/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-020/OverlyLargeRange.qlx.\n[18/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-020/CookieInjection.qlx.\n[19/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-020/IncompleteUrlSubstringSanitization.qlx.\n[20/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-089/SqlInjection.qlx.\n[21/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-1275/SameSiteNoneCookie.qlx.\n[22/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-943/NoSqlInjection.qlx.\n[23/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-377/InsecureTemporaryFile.qlx.\n[24/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-078/CommandInjection.qlx.\n[25/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CVE-2018-1281/BindToAllInterfaces.qlx.\n[26/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-285/PamAuthorization.qlx.\n[27/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-326/WeakCryptoKey.qlx.\n[28/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-295/MissingHostKeyValidation.qlx.\n[29/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-502/UnsafeDeserialization.qlx.\n[30/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-209/StackTraceExposure.qlx.\n[31/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-352/CSRFProtectionDisabled.qlx.\n[32/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-116/BadTagFilter.qlx.\n[33/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-776/XmlBomb.qlx.\n[34/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-113/HeaderInjection.qlx.\n[35/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-074/TemplateInjection.qlx.\n[36/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-730/RegexInjection.qlx.\n[37/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-730/PolynomialReDoS.qlx.\n[38/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-730/ReDoS.qlx.\n[39/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-611/Xxe.qlx.\n[40/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-643/XpathInjection.qlx.\n[41/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Expressions/UseofInput.qlx.\n[42/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-022/TarSlip.qlx.\n[43/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-918/PartialServerSideRequestForgery.qlx.\n[44/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-079/Jinja2WithoutEscaping.qlx.\n[45/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-117/LogInjection.qlx.\n[46/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-078/UnsafeShellCommandConstruction.qlx.\n[47/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-295/RequestWithoutValidation.qlx.\n[48/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Security/CWE-732/WeakFilePermissions.qlx.\n[49/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Diagnostics/ExtractedFiles.qlx.\n[50/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Diagnostics/ExtractionWarnings.qlx.\n[51/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Summary/LinesOfUserCode.qlx.\n[52/52] Loaded /home/vscode/.codeql/packages/codeql/python-queries/1.8.2/Summary/LinesOfCode.qlx.\nStarting evaluation of codeql/python-queries/Diagnostics/ExtractedFiles.ql.\nStarting evaluation of codeql/python-queries/Expressions/UseofInput.ql.\nStarting evaluation of codeql/python-queries/Security/CVE-2018-1281/BindToAllInterfaces.ql.\nStarting evaluation of codeql/python-queries/Diagnostics/ExtractionWarnings.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-020/CookieInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-020/IncompleteHostnameRegExp.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-020/OverlyLargeRange.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-022/PathInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-022/TarSlip.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-074/TemplateInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-078/CommandInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-078/UnsafeShellCommandConstruction.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-079/Jinja2WithoutEscaping.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-079/ReflectedXss.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-089/SqlInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-090/LdapInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-094/CodeInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-1004/NonHttpOnlyCookie.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-113/HeaderInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-116/BadTagFilter.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-117/LogInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-1275/SameSiteNoneCookie.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-209/StackTraceExposure.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-215/FlaskDebug.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-285/PamAuthorization.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-295/MissingHostKeyValidation.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-295/RequestWithoutValidation.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-312/CleartextLogging.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-312/CleartextStorage.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-326/WeakCryptoKey.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-327/BrokenCryptoAlgorithm.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-327/InsecureDefaultProtocol.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-327/InsecureProtocol.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-327/WeakSensitiveDataHashing.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-352/CSRFProtectionDisabled.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-377/InsecureTemporaryFile.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-502/UnsafeDeserialization.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-601/UrlRedirect.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-611/Xxe.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-614/InsecureCookie.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-643/XpathInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-730/PolynomialReDoS.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-730/ReDoS.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-730/RegexInjection.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-732/WeakFilePermissions.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-776/XmlBomb.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-918/FullServerSideRequestForgery.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-918/PartialServerSideRequestForgery.ql.\nStarting evaluation of codeql/python-queries/Security/CWE-943/NoSqlInjection.ql.\nStarting evaluation of codeql/python-queries/Summary/LinesOfCode.ql.\nStarting evaluation of codeql/python-queries/Summary/LinesOfUserCode.ql.\n[1/52 eval 25s] Evaluation done; writing results to codeql/python-queries/Diagnostics/ExtractionWarnings.bqrs.\n[2/52 eval 25.4s] Evaluation done; writing results to codeql/python-queries/Summary/LinesOfCode.bqrs.\n[3/52 eval 25.8s] Evaluation done; writing results to codeql/python-queries/Diagnostics/ExtractedFiles.bqrs.\n[4/52 eval 57.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.bqrs.\nKilled\n"
+        }
+      ]
     },
     {
       "repo": "sentence-transformers",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 6,
+      "output_file": "data/results/sentence-transformers-codeql.json",
+      "timestamp": "2026-05-08T04:49:51.653398"
     },
     {
-      "repo": "skills",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "repo": "lerobot",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/lerobot-codeql.json",
+      "timestamp": "2026-05-08T04:51:00.239982"
     },
     {
       "repo": "text-generation-inference",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "smolagents",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "speech-to-speech",
-      "status": "skipped",
-      "reason": "no_supported_languages"
-    },
-    {
-      "repo": "transformers",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/text-generation-inference-codeql.json",
+      "timestamp": "2026-05-08T04:54:34.389616"
     },
     {
       "repo": "trl",
-      "status": "skipped",
-      "reason": "no_supported_languages"
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/trl-codeql.json",
+      "timestamp": "2026-05-08T04:54:53.401611"
     }
   ]
 }
