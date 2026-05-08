@@ -2,13 +2,12 @@
     "repos_dir": "data/repos",
     "output_dir": "data/results",
     "repositories": [
-        "https://github.com/huggingface/lerobot",
-        "https://github.com/huggingface/datasets",
-        "https://github.com/huggingface/peft",
-        "https://github.com/huggingface/sentence-transformers",
-        "https://github.com/huggingface/trl",
-        "https://github.com/huggingface/text-generation-inference",
-        "https://github.com/huggingface/skills"
+        "https://github.com/huggingface/pytorch-image-models",
+        "https://huggingface.co/sentence-transformers",
+        "https://github.com/huggingface/skills",
+        "https://github.com/huggingface/smolagents",
+        "https://github.com/huggingface/speech-to-speech",
+        "https://github.com/huggingface/transformers"
     ],
     "organizations": [],
     "clone_options": {

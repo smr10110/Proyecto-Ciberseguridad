@@ -135,7 +135,7 @@ class CodeQLAnalyzer:
                 if lang in _INTERPRETED_LANGS:
                     cmd.append("--build-mode=none")
 
-                result = run_command(cmd)
+                result = run_command(cmd, verbose=True)
 
                 if not result.success:
                     error_detail = result.error_message or result.stderr[:200]
@@ -163,7 +163,7 @@ class CodeQLAnalyzer:
                     f"--ram={self._ram_mb}",
                 ]
 
-                result = run_command(cmd)
+                result = run_command(cmd, verbose=True)
 
                 if result.success:
                     findings = self._parse_sarif(sarif_file)
