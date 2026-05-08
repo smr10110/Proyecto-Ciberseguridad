@@ -81,7 +81,7 @@ function RepoCodeQLChart({ codeqlByRepoArr }) {
             <XAxis type="number" tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <YAxis type="category" dataKey="repo" width={80} tick={{ fontSize: 9, fill: '#8892b0', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <Tooltip contentStyle={TT} formatter={v => [v, 'Hallazgos']} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-            <Bar dataKey="total" radius={[0, 3, 3, 0]} maxBarSize={12}>
+            <Bar isAnimationActive={false} dataKey="total" radius={[0, 3, 3, 0]} maxBarSize={12}>
               {data.map((_, i) => (
                 <Cell key={i} fill={`rgba(168,85,247,${0.35 + (data.length - i) / data.length * 0.55})`} />
               ))}
@@ -113,7 +113,7 @@ function TopRulesChart({ topRules }) {
             <XAxis type="number" tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <YAxis type="category" dataKey="name" width={90} tick={{ fontSize: 8, fill: '#8892b0', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <Tooltip contentStyle={TT} formatter={v => [v, 'Ocurrencias']} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-            <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
+            <Bar isAnimationActive={false} dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
               {data.map((d, i) => <Cell key={i} fill={d.hex} fillOpacity={0.8} />)}
             </Bar>
           </BarChart>
@@ -142,7 +142,7 @@ function TopFilesChart({ topFiles }) {
             <XAxis type="number" tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <YAxis type="category" dataKey="file" width={100} tick={{ fontSize: 8, fill: '#8892b0', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
             <Tooltip contentStyle={TT} formatter={v => [v, 'Hallazgos']} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-            <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
+            <Bar isAnimationActive={false} dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
               {data.map((_, i) => (
                 <Cell key={i} fill={`rgba(61,127,255,${0.35 + (data.length - i) / data.length * 0.55})`} />
               ))}
