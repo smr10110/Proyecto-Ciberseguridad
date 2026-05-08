@@ -2,26 +2,13 @@
     "repos_dir": "data/repos",
     "output_dir": "data/results",
     "repositories": [
-        "https://github.com/huggingface/transformers",
-        "https://github.com/huggingface/pytorch-image-models",
-        "https://github.com/huggingface/diffusers",
-        "https://github.com/huggingface/smolagents",
-        "https://github.com/huggingface/open-r1",
         "https://github.com/huggingface/lerobot",
         "https://github.com/huggingface/datasets",
         "https://github.com/huggingface/peft",
         "https://github.com/huggingface/sentence-transformers",
         "https://github.com/huggingface/trl",
         "https://github.com/huggingface/text-generation-inference",
-        "https://github.com/huggingface/skills",
-        "https://github.com/huggingface/accelerate",
-        "https://github.com/huggingface/ml-intern",
-        "https://github.com/huggingface/alignment-handbook",
-        "https://github.com/huggingface/parler-tts",
-        "https://github.com/huggingface/nanoVLM",
-        "https://github.com/huggingface/speech-to-speech",
-        "https://github.com/huggingface/autotrain-advanced",
-        "https://github.com/huggingface/distil-whisper"
+        "https://github.com/huggingface/skills"
     ],
     "organizations": [],
     "clone_options": {
