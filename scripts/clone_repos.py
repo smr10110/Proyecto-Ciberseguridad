@@ -74,7 +74,7 @@ class RepoCloner:
 
         while True:
             url = f"{GITHUB_API}/orgs/{org_name}/repos?per_page=100&page={page}&type=public"
-            response = requests.get(url, timeout=30)
+            response = requests.get(url)
 
             if response.status_code == 403:
                 _safe_print(
@@ -139,8 +139,7 @@ class RepoCloner:
             _safe_print(
                 f"  [yellow]⟳ Ya existe, actualizando:[/yellow] {repo_name}")
             result = run_command(
-                ["git", "-C", str(dest_path), "pull", "--ff-only"],
-                timeout=120,
+                ["git", "-C", str(dest_path), "pull", "--ff-only"]
             )
             status = "updated" if result.success else "update_failed"
             return {
@@ -152,8 +151,7 @@ class RepoCloner:
 
         _safe_print(f"  [cyan]↓ Clonando:[/cyan] {repo_name}")
         result = run_command(
-            ["git", "clone", "--depth", "1", clone_url, str(dest_path)],
-            timeout=300,
+            ["git", "clone", "--depth", "1", clone_url, str(dest_path)]
         )
 
         if result.success:

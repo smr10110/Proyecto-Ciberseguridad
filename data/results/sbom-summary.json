@@ -1,81 +1,44 @@
 [
   {
-<<<<<<< HEAD
-    "repo": "skills",
-    "status": "success",
-    "output_file": "data/results/skills-sbom.json",
-    "timestamp": "2026-05-08T02:08:11.642022"
-  },
-  {
-    "repo": "datasets",
-    "status": "success",
-    "output_file": "data/results/datasets-sbom.json",
-    "timestamp": "2026-05-08T02:08:15.024692"
-  },
-  {
     "repo": "sentence-transformers",
     "status": "success",
     "output_file": "data/results/sentence-transformers-sbom.json",
-    "timestamp": "2026-05-08T02:08:23.218343"
+    "timestamp": "2026-05-08T04:26:26.547490"
   },
   {
     "repo": "peft",
     "status": "success",
     "output_file": "data/results/peft-sbom.json",
-    "timestamp": "2026-05-08T02:08:26.831404"
+    "timestamp": "2026-05-08T04:26:30.985055"
+  },
+  {
+    "repo": "datasets",
+    "status": "success",
+    "output_file": "data/results/datasets-sbom.json",
+    "timestamp": "2026-05-08T04:26:33.039901"
+  },
+  {
+    "repo": "skills",
+    "status": "success",
+    "output_file": "data/results/skills-sbom.json",
+    "timestamp": "2026-05-08T04:26:39.118348"
   },
   {
     "repo": "lerobot",
     "status": "success",
     "output_file": "data/results/lerobot-sbom.json",
-    "timestamp": "2026-05-08T02:08:27.006370"
+    "timestamp": "2026-05-08T04:26:47.251839"
   },
   {
     "repo": "trl",
     "status": "success",
     "output_file": "data/results/trl-sbom.json",
-    "timestamp": "2026-05-08T02:08:28.054278"
+    "timestamp": "2026-05-08T04:27:13.761103"
   },
   {
     "repo": "text-generation-inference",
     "status": "success",
     "output_file": "data/results/text-generation-inference-sbom.json",
-    "timestamp": "2026-05-08T02:08:35.160302"
-=======
-    "repo": "meshgen",
-    "status": "success",
-    "output_file": "data/results/meshgen-sbom.json",
-    "timestamp": "2026-05-08T02:34:37.170230"
-  },
-  {
-    "repo": "optimum-nvidia",
-    "status": "success",
-    "output_file": "data/results/optimum-nvidia-sbom.json",
-    "timestamp": "2026-05-08T02:34:37.910654"
-  },
-  {
-    "repo": "optimum-quanto",
-    "status": "success",
-    "output_file": "data/results/optimum-quanto-sbom.json",
-    "timestamp": "2026-05-08T02:34:39.042170"
-  },
-  {
-    "repo": "search-and-learn",
-    "status": "success",
-    "output_file": "data/results/search-and-learn-sbom.json",
-    "timestamp": "2026-05-08T02:34:39.127341"
-  },
-  {
-    "repo": "kernels",
-    "status": "success",
-    "output_file": "data/results/kernels-sbom.json",
-    "timestamp": "2026-05-08T02:34:41.560804"
-  },
-  {
-    "repo": "dataset-viewer",
-    "status": "success",
-    "output_file": "data/results/dataset-viewer-sbom.json",
-    "timestamp": "2026-05-08T02:34:43.028293"
->>>>>>> main
+    "timestamp": "2026-05-08T04:27:31.311956"
   }
 ]

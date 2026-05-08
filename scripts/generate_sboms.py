@@ -42,7 +42,7 @@ class SBOMGenerator:
             f"--file={output_file}"
         ]
 
-        result = run_command(cmd, timeout=300)
+        result = run_command(cmd)
 
         if result.success:
             _safe_print(f"[green]✓ SBOM generado:[/green] {output_file}")

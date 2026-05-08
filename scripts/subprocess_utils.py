@@ -5,7 +5,7 @@ CommandResult = namedtuple(
     "CommandResult", ["success", "stdout", "stderr", "error_message"])
 
 
-def run_command(cmd: list[str], timeout: int = 600) -> CommandResult:
+def run_command(cmd: list[str], timeout: int | None = None) -> CommandResult:
     """Ejecuta un comando y captura su salida y errores."""
     try:
         process = subprocess.run(

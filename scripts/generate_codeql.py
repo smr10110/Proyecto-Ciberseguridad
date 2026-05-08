@@ -52,7 +52,7 @@ class CodeQLAnalyzer:
         try:
             result = sp.run(
                 ["free", "-m"],
-                capture_output=True, text=True, timeout=5
+                capture_output=True, text=True
             )
             if result.returncode == 0:
                 # Linea "Mem:" -> columna "available"
@@ -64,24 +64,6 @@ class CodeQLAnalyzer:
         except (OSError, ValueError, sp.TimeoutExpired):
             pass
         return 2048  # fallback
-
-    def _estimate_timeout(self, repo_path: Path) -> int:
-        """Estima un timeout razonable basado en el tamano del repositorio."""
-        import subprocess as sp
-        try:
-            result = sp.run(
-                ["du", "-sb", str(repo_path)],
-                capture_output=True, text=True, timeout=30
-            )
-            if result.returncode == 0:
-                size_bytes = int(result.stdout.split()[0])
-                size_mb = size_bytes / (1024 * 1024)
-            else:
-                size_mb = 100  # fallback
-            # Entre 10 min (minimo) y 60 min (maximo), escalando ~5s por MB
-            return max(600, min(3600, int(size_mb * 5)))
-        except (OSError, ValueError, sp.TimeoutExpired):
-            return 900  # 15 min por defecto si no se puede calcular
 
     def analyze_repo(self, repo_path: Path) -> dict:
         """Analiza un repositorio con CodeQL.
@@ -119,10 +101,6 @@ class CodeQLAnalyzer:
                 _safe_print(
                     f"  [blue]  Lenguajes detectados: {', '.join(languages)}[/blue]")
 
-            # Timeout adaptativo segun tamano del repo
-            db_timeout = self._estimate_timeout(repo_path)
-            _safe_print(
-                f"  [blue]  Timeout estimado: {db_timeout // 60} min[/blue]")
             _safe_print(
                 f"  [blue]  Threads: {self._threads} | RAM: {self._ram_mb} MB[/blue]")
 
@@ -157,7 +135,7 @@ class CodeQLAnalyzer:
                 if lang in _INTERPRETED_LANGS:
                     cmd.append("--build-mode=none")
 
-                result = run_command(cmd, timeout=db_timeout)
+                result = run_command(cmd)
 
                 if not result.success:
                     error_detail = result.error_message or result.stderr[:200]
@@ -185,8 +163,7 @@ class CodeQLAnalyzer:
                     f"--ram={self._ram_mb}",
                 ]
 
-                analyze_timeout = max(900, db_timeout)
-                result = run_command(cmd, timeout=analyze_timeout)
+                result = run_command(cmd)
 
                 if result.success:
                     findings = self._parse_sarif(sarif_file)
@@ -310,7 +287,7 @@ class CodeQLAnalyzer:
             try:
                 result = sp.run(
                     find_args,
-                    capture_output=True, text=True, timeout=60
+                    capture_output=True, text=True
                 )
                 if result.returncode == 0 and result.stdout.strip():
                     count = result.stdout.strip().count("\n") + 1

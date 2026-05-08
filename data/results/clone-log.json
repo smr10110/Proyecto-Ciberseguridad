@@ -1,89 +1,48 @@
 {
-<<<<<<< HEAD
-  "timestamp": "2026-05-08T02:06:12.219953",
+  "timestamp": "2026-05-08T04:25:04.671451",
   "total": 7,
   "results": [
     {
-      "repo": "datasets",
-      "url": "https://github.com/huggingface/datasets",
-      "status": "cloned",
-      "path": "data/repos/datasets"
-    },
-    {
-      "repo": "trl",
-      "url": "https://github.com/huggingface/trl",
-      "status": "cloned",
-      "path": "data/repos/trl"
-    },
-    {
-      "repo": "skills",
-      "url": "https://github.com/huggingface/skills",
-      "status": "cloned",
-      "path": "data/repos/skills"
+      "repo": "lerobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "status": "updated",
+      "path": "data/repos/lerobot"
     },
     {
       "repo": "sentence-transformers",
       "url": "https://github.com/huggingface/sentence-transformers",
-      "status": "cloned",
+      "status": "updated",
       "path": "data/repos/sentence-transformers"
     },
     {
-      "repo": "lerobot",
-      "url": "https://github.com/huggingface/lerobot",
-      "status": "cloned",
-      "path": "data/repos/lerobot"
+      "repo": "trl",
+      "url": "https://github.com/huggingface/trl",
+      "status": "updated",
+      "path": "data/repos/trl"
+    },
+    {
+      "repo": "datasets",
+      "url": "https://github.com/huggingface/datasets",
+      "status": "updated",
+      "path": "data/repos/datasets"
     },
     {
       "repo": "peft",
       "url": "https://github.com/huggingface/peft",
-      "status": "cloned",
+      "status": "updated",
       "path": "data/repos/peft"
     },
     {
       "repo": "text-generation-inference",
       "url": "https://github.com/huggingface/text-generation-inference",
-      "status": "cloned",
+      "status": "updated",
       "path": "data/repos/text-generation-inference"
-=======
-  "timestamp": "2026-05-08T02:34:17.225407",
-  "total": 6,
-  "results": [
-    {
-      "repo": "search-and-learn",
-      "url": "https://github.com/huggingface/search-and-learn",
-      "status": "cloned",
-      "path": "data/repos/search-and-learn"
     },
     {
-      "repo": "meshgen",
-      "url": "https://github.com/huggingface/meshgen",
-      "status": "cloned",
-      "path": "data/repos/meshgen"
-    },
-    {
-      "repo": "optimum-nvidia",
-      "url": "https://github.com/huggingface/optimum-nvidia",
-      "status": "cloned",
-      "path": "data/repos/optimum-nvidia"
-    },
-    {
-      "repo": "optimum-quanto",
-      "url": "https://github.com/huggingface/optimum-quanto",
-      "status": "cloned",
-      "path": "data/repos/optimum-quanto"
-    },
-    {
-      "repo": "dataset-viewer",
-      "url": "https://github.com/huggingface/dataset-viewer",
-      "status": "cloned",
-      "path": "data/repos/dataset-viewer"
-    },
-    {
-      "repo": "kernels",
-      "url": "https://github.com/huggingface/kernels",
-      "status": "cloned",
-      "path": "data/repos/kernels"
->>>>>>> main
+      "repo": "skills",
+      "url": "https://github.com/huggingface/skills",
+      "status": "updated",
+      "path": "data/repos/skills"
     }
   ]
 }

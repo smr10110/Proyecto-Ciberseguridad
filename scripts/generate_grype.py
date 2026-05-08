@@ -52,7 +52,7 @@ class GrypeScanner:
             f"--file={output_file}"
         ]
 
-        result = run_command(cmd, timeout=600)
+        result = run_command(cmd)
 
         if result.success or "Found:" in result.stdout:
             # Leer el archivo de salida para obtener estadísticas
@@ -97,7 +97,7 @@ class GrypeScanner:
         # Actualizar base de datos (SIEMPRE secuencial, antes de cualquier escaneo)
         _safe_print(
             "\n[yellow]Actualizando base de datos de Grype...[/yellow]")
-        run_command(["grype", "db", "update"], timeout=120)
+        run_command(["grype", "db", "update"])
 
         repos = [d for d in self.repos_dir.iterdir() if d.is_dir()]
 
