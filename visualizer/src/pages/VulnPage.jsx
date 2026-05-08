@@ -48,7 +48,7 @@ function CvssDistChart({ stats }) {
             const pct = total > 0 ? ((v / total) * 100).toFixed(1) : '0.0'
             return [`${v} (${pct}%)`, n]
           }} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-          <Bar dataKey="value" radius={[3, 3, 0, 0]} maxBarSize={40}
+          <Bar isAnimationActive={false} dataKey="value" radius={[3, 3, 0, 0]} maxBarSize={40}
             label={{ position: 'top', fontSize: 9, fill: '#8892b0', fontFamily: 'IBM Plex Mono',
               formatter: v => total > 0 ? `${((v / total) * 100).toFixed(0)}%` : '' }}>
             {data.map((d, i) => (
@@ -79,7 +79,7 @@ function RepoVulnChart({ grypeByRepoArr }) {
           <XAxis type="number" tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
           <YAxis type="category" dataKey="repo" width={80} tick={{ fontSize: 9, fill: '#8892b0', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
           <Tooltip contentStyle={TT} formatter={v => [v, 'CVEs']} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-          <Bar dataKey="total" radius={[0, 3, 3, 0]} maxBarSize={12}>
+          <Bar  dataKey="total" radius={[0, 3, 3, 0]} maxBarSize={12}>
             {data.map((_, i) => (
               <Cell key={i} fill={`rgba(255,115,64,${0.35 + (data.length - i) / data.length * 0.55})`} />
             ))}
@@ -107,7 +107,7 @@ function TopPackagesChart({ topPackages }) {
           <XAxis type="number" tick={{ fontSize: 9, fill: '#4a5580', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
           <YAxis type="category" dataKey="pkg" width={80} tick={{ fontSize: 9, fill: '#8892b0', fontFamily: 'IBM Plex Mono' }} axisLine={false} tickLine={false} />
           <Tooltip contentStyle={TT} formatter={v => [v, 'CVEs']} cursor={{ fill: 'rgba(255,255,255,0.03)' }} />
-          <Bar dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
+          <Bar isAnimationActive={false} dataKey="count" radius={[0, 3, 3, 0]} maxBarSize={12}>
             {data.map((d, i) => <Cell key={i} fill={d.hex} fillOpacity={0.75} />)}
           </Bar>
         </BarChart>
@@ -136,12 +136,11 @@ function FixAvailChart({ fixCounts, fixByRepo }) {
         <div className="relative shrink-0" style={{ width: 90, height: 90 }}>
           <ResponsiveContainer width={90} height={90}>
             <PieChart>
-              <Pie data={pieData.length ? pieData : [{ name: 'empty', value: 1, hex: '#1a2035' }]}
+              <Pie  data={pieData.length ? pieData : [{ name: 'empty', value: 1, hex: '#1a2035' }]}
                 cx={41} cy={41} innerRadius={26} outerRadius={40}
                 paddingAngle={pieData.length > 1 ? 4 : 0}
                 dataKey="value" startAngle={90} endAngle={-270}
-                animationBegin={400} animationDuration={800} stroke="none"
-                isAnimationActive>
+                isAnimationActive={false} stroke="none">
                 {(pieData.length ? pieData : [{ hex: '#1a2035' }]).map((e, i) => (
                   <Cell key={i} fill={e.hex} stroke="transparent" />
                 ))}

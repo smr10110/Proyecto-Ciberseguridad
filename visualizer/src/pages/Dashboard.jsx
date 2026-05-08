@@ -121,14 +121,14 @@ function CvssDonut({ stats }) {
         <div className="absolute inset-0">
           <ResponsiveContainer width="100%" height="100%">
             <PieChart margin={{ top: 22, right: 62, bottom: 4, left: 62 }}>
-              <Pie
+              <Pie isAnimationActive={false}
                 data={empty ? [{ name: 'empty', value: 1 }] : data}
                 cx="50%" cy="44%"
                 innerRadius="36%" outerRadius="58%"
                 paddingAngle={data.length > 1 ? 3 : 0}
                 dataKey="value"
                 startAngle={90} endAngle={-270}
-                animationBegin={200} animationDuration={1000}
+                
                 stroke="none"
                 label={empty ? false : renderOuterLabel}
                 labelLine={{ stroke: '#3a4462', strokeWidth: 1, strokeDasharray: '3 2' }}
@@ -286,7 +286,7 @@ function TopReposBar({ grypeByRepoArr, codeqlByRepoArr }) {
                   formatter={v => [v.toLocaleString(), 'Problemas']}
                   cursor={{ fill: 'rgba(255,255,255,0.03)' }}
                 />
-                <Bar dataKey="total" radius={[0, 4, 4, 0]}>
+                <Bar isAnimationActive={false} dataKey="total" radius={[0, 4, 4, 0]}>
                   <LabelList
                     dataKey="total"
                     position="right"
