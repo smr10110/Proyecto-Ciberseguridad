@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {
   LayoutDashboard, ShieldAlert, Code2, Package,
-  RefreshCw, AlertCircle, Loader2, Shield,
+  RefreshCw, AlertCircle, Loader2, Shield, GitBranch,
 } from 'lucide-react'
 import { useData } from './hooks/useData'
 
@@ -9,12 +9,14 @@ import Dashboard from './pages/Dashboard.jsx'
 import VulnPage from './pages/VulnPage.jsx'
 import CodeQLPage from './pages/CodeQLPage.jsx'
 import SbomPage from './pages/SbomPage.jsx'
+import ReposPage from './pages/ReposPage.jsx'
 
 const NAV = [
-  { id: 'dashboard', label: 'Dashboard', Icon: LayoutDashboard, accent: '#3d7fff' },
-  { id: 'vulnerabilities', label: 'CVEs', Icon: ShieldAlert, accent: '#ff3d52' },
-  { id: 'codeql', label: 'CodeQL', Icon: Code2, accent: '#a855f7' },
-  { id: 'sbom', label: 'SBOM', Icon: Package, accent: '#22d48e' },
+  { id: 'dashboard',       label: 'Dashboard', Icon: LayoutDashboard, accent: '#3d7fff' },
+  { id: 'repos',           label: 'Repos',     Icon: GitBranch,       accent: '#3d7fff' },
+  { id: 'vulnerabilities', label: 'CVEs',       Icon: ShieldAlert,     accent: '#ff3d52' },
+  { id: 'codeql',          label: 'CodeQL',    Icon: Code2,           accent: '#a855f7' },
+  { id: 'sbom',            label: 'SBOM',      Icon: Package,         accent: '#22d48e' },
 ]
 
 function fmt(d) {
@@ -121,10 +123,11 @@ export default function App() {
 
         {data && (
           <div className="animate-fade-in h-full flex flex-col">
-            {page === 'dashboard' && <Dashboard data={data} />}
-            {page === 'vulnerabilities' && <VulnPage data={data} />}
-            {page === 'codeql' && <CodeQLPage data={data} />}
-            {page === 'sbom' && <SbomPage data={data} />}
+            {page === 'dashboard'       && <Dashboard data={data} />}
+            {page === 'repos'           && <ReposPage  data={data} />}
+            {page === 'vulnerabilities' && <VulnPage   data={data} />}
+            {page === 'codeql'          && <CodeQLPage data={data} />}
+            {page === 'sbom'            && <SbomPage   data={data} />}
           </div>
         )}
       </main>
