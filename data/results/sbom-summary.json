@@ -1,44 +1,26 @@
 [
   {
-    "repo": "sentence-transformers",
+    "repo": "nanoVLM",
     "status": "success",
-    "output_file": "data/results/sentence-transformers-sbom.json",
-    "timestamp": "2026-05-08T04:26:26.547490"
+    "output_file": "data/results/nanoVLM-sbom.json",
+    "timestamp": "2026-05-08T05:51:23.615550"
   },
   {
-    "repo": "peft",
+    "repo": "open-r1",
     "status": "success",
-    "output_file": "data/results/peft-sbom.json",
-    "timestamp": "2026-05-08T04:26:30.985055"
+    "output_file": "data/results/open-r1-sbom.json",
+    "timestamp": "2026-05-08T05:51:23.975664"
   },
   {
-    "repo": "datasets",
+    "repo": "optimum-nvidia",
     "status": "success",
-    "output_file": "data/results/datasets-sbom.json",
-    "timestamp": "2026-05-08T04:26:33.039901"
+    "output_file": "data/results/optimum-nvidia-sbom.json",
+    "timestamp": "2026-05-08T05:51:24.307640"
   },
   {
-    "repo": "skills",
+    "repo": "optimum-quanto",
     "status": "success",
-    "output_file": "data/results/skills-sbom.json",
-    "timestamp": "2026-05-08T04:26:39.118348"
-  },
-  {
-    "repo": "lerobot",
-    "status": "success",
-    "output_file": "data/results/lerobot-sbom.json",
-    "timestamp": "2026-05-08T04:26:47.251839"
-  },
-  {
-    "repo": "trl",
-    "status": "success",
-    "output_file": "data/results/trl-sbom.json",
-    "timestamp": "2026-05-08T04:27:13.761103"
-  },
-  {
-    "repo": "text-generation-inference",
-    "status": "success",
-    "output_file": "data/results/text-generation-inference-sbom.json",
-    "timestamp": "2026-05-08T04:27:31.311956"
+    "output_file": "data/results/optimum-quanto-sbom.json",
+    "timestamp": "2026-05-08T05:51:25.269866"
   }
 ]

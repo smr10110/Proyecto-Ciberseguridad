@@ -1,48 +1,30 @@
 {
-  "timestamp": "2026-05-08T04:25:04.671451",
-  "total": 7,
+  "timestamp": "2026-05-08T05:51:07.420941",
+  "total": 4,
   "results": [
     {
-      "repo": "lerobot",
-      "url": "https://github.com/huggingface/lerobot",
-      "status": "updated",
-      "path": "data/repos/lerobot"
+      "repo": "open-r1",
+      "url": "https://github.com/huggingface/open-r1",
+      "status": "cloned",
+      "path": "data/repos/open-r1"
     },
     {
-      "repo": "sentence-transformers",
-      "url": "https://github.com/huggingface/sentence-transformers",
-      "status": "updated",
-      "path": "data/repos/sentence-transformers"
+      "repo": "optimum-nvidia",
+      "url": "https://github.com/huggingface/optimum-nvidia",
+      "status": "cloned",
+      "path": "data/repos/optimum-nvidia"
     },
     {
-      "repo": "trl",
-      "url": "https://github.com/huggingface/trl",
-      "status": "updated",
-      "path": "data/repos/trl"
+      "repo": "nanoVLM",
+      "url": "https://github.com/huggingface/nanoVLM",
+      "status": "cloned",
+      "path": "data/repos/nanoVLM"
     },
     {
-      "repo": "datasets",
-      "url": "https://github.com/huggingface/datasets",
-      "status": "updated",
-      "path": "data/repos/datasets"
-    },
-    {
-      "repo": "peft",
-      "url": "https://github.com/huggingface/peft",
-      "status": "updated",
-      "path": "data/repos/peft"
-    },
-    {
-      "repo": "text-generation-inference",
-      "url": "https://github.com/huggingface/text-generation-inference",
-      "status": "updated",
-      "path": "data/repos/text-generation-inference"
-    },
-    {
-      "repo": "skills",
-      "url": "https://github.com/huggingface/skills",
-      "status": "updated",
-      "path": "data/repos/skills"
+      "repo": "optimum-quanto",
+      "url": "https://github.com/huggingface/optimum-quanto",
+      "status": "cloned",
+      "path": "data/repos/optimum-quanto"
     }
   ]
 }
