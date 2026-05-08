@@ -1,42 +1,36 @@
 {
-  "timestamp": "2026-05-08T02:34:17.225407",
-  "total": 6,
+  "timestamp": "2026-05-08T02:52:36.121217",
+  "total": 5,
   "results": [
     {
-      "repo": "search-and-learn",
-      "url": "https://github.com/huggingface/search-and-learn",
-      "status": "cloned",
-      "path": "data/repos/search-and-learn"
+      "repo": "transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "status": "update_failed",
+      "path": "data/repos/transformers"
     },
     {
-      "repo": "meshgen",
-      "url": "https://github.com/huggingface/meshgen",
-      "status": "cloned",
-      "path": "data/repos/meshgen"
+      "repo": "open-r1",
+      "url": "https://github.com/huggingface/open-r1",
+      "status": "update_failed",
+      "path": "data/repos/open-r1"
     },
     {
-      "repo": "optimum-nvidia",
-      "url": "https://github.com/huggingface/optimum-nvidia",
-      "status": "cloned",
-      "path": "data/repos/optimum-nvidia"
+      "repo": "pytorch-image-models",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "status": "update_failed",
+      "path": "data/repos/pytorch-image-models"
     },
     {
-      "repo": "optimum-quanto",
-      "url": "https://github.com/huggingface/optimum-quanto",
-      "status": "cloned",
-      "path": "data/repos/optimum-quanto"
+      "repo": "diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "status": "update_failed",
+      "path": "data/repos/diffusers"
     },
     {
-      "repo": "dataset-viewer",
-      "url": "https://github.com/huggingface/dataset-viewer",
-      "status": "cloned",
-      "path": "data/repos/dataset-viewer"
-    },
-    {
-      "repo": "kernels",
-      "url": "https://github.com/huggingface/kernels",
-      "status": "cloned",
-      "path": "data/repos/kernels"
+      "repo": "smolagents",
+      "url": "https://github.com/huggingface/smolagents",
+      "status": "update_failed",
+      "path": "data/repos/smolagents"
     }
   ]
 }

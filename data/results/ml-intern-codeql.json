@@ -1,34 +1,7 @@
 {
   "findings": [
     {
-      "rule_id": "py/clear-text-storage-sensitive-data",
-      "severity": "error",
-      "name": "Clear-text storage of sensitive information",
-      "description": "This expression stores [sensitive data (password)](1) as clear text.",
-      "locations": [
-        {
-          "file": "backend/routes/auth.py",
-          "startLine": 177,
-          "endLine": 0
-        }
-      ],
-      "tool": "CodeQL"
-    },
-    {
-      "rule_id": "py/clear-text-storage-sensitive-data",
-      "severity": "error",
-      "name": "Clear-text storage of sensitive information",
-      "description": "This expression stores [sensitive data (secret)](1) as clear text.\nThis expression stores [sensitive data (secret)](2) as clear text.\nThis expression stores [sensitive data (secret)](3) as clear text.",
-      "locations": [
-        {
-          "file": "agent/core/session_uploader.py",
-          "startLine": 290,
-          "endLine": 0
-        }
-      ],
-      "tool": "CodeQL"
-    },
-    {
+<<<<<<< HEAD
       "rule_id": "py/weak-sensitive-data-hashing",
       "severity": "warning",
       "name": "Use of a broken or weak cryptographic hashing algorithm on sensitive data",
@@ -57,6 +30,67 @@
       "tool": "CodeQL"
     },
     {
+=======
+>>>>>>> main
+      "rule_id": "py/clear-text-storage-sensitive-data",
+      "severity": "error",
+      "name": "Clear-text storage of sensitive information",
+      "description": "This expression stores [sensitive data (password)](1) as clear text.",
+      "locations": [
+        {
+          "file": "backend/routes/auth.py",
+          "startLine": 177,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/clear-text-storage-sensitive-data",
+      "severity": "error",
+      "name": "Clear-text storage of sensitive information",
+      "description": "This expression stores [sensitive data (secret)](1) as clear text.\nThis expression stores [sensitive data (secret)](2) as clear text.\nThis expression stores [sensitive data (secret)](3) as clear text.",
+      "locations": [
+        {
+          "file": "agent/core/session_uploader.py",
+          "startLine": 290,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+<<<<<<< HEAD
+=======
+      "rule_id": "py/weak-sensitive-data-hashing",
+      "severity": "warning",
+      "name": "Use of a broken or weak cryptographic hashing algorithm on sensitive data",
+      "description": "[Sensitive data (password)](1) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.\n[Sensitive data (password)](2) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.\n[Sensitive data (password)](3) is used in a hashing algorithm (SHA256) that is insecure for password hashing, since it is not a computationally expensive hash function.",
+      "locations": [
+        {
+          "file": "backend/dependencies.py",
+          "startLine": 89,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/weak-sensitive-data-hashing",
+      "severity": "warning",
+      "name": "Use of a broken or weak cryptographic hashing algorithm on sensitive data",
+      "description": "[Sensitive data (id)](1) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (id)](2) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](3) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](4) is used in a hashing algorithm (SHA1) that is insecure.\n[Sensitive data (secret)](5) is used in a hashing algorithm (SHA1) that is insecure.",
+      "locations": [
+        {
+          "file": "agent/core/session_uploader.py",
+          "startLine": 94,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+>>>>>>> main
       "rule_id": "py/jinja2/autoescape-false",
       "severity": "error",
       "name": "Jinja2 templating with autoescape=False",
