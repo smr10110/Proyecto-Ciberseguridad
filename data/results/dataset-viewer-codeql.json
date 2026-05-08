@@ -1,0 +1,61 @@
+{
+  "findings": [
+    {
+      "rule_id": "py/clear-text-logging-sensitive-data",
+      "severity": "error",
+      "name": "Clear-text logging of sensitive information",
+      "description": "This expression logs [sensitive data (password)](1) as clear text.",
+      "locations": [
+        {
+          "file": "libs/libapi/src/libapi/authentication.py",
+          "startLine": 84,
+          "endLine": 85
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/partial-ssrf",
+      "severity": "error",
+      "name": "Partial server-side request forgery",
+      "description": "Part of the URL of this request depends on a [user-provided value](1).\nPart of the URL of this request depends on a [user-provided value](2).",
+      "locations": [
+        {
+          "file": "front/admin_ui/app.py",
+          "startLine": 498,
+          "endLine": 502
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/partial-ssrf",
+      "severity": "error",
+      "name": "Partial server-side request forgery",
+      "description": "Part of the URL of this request depends on a [user-provided value](1).\nPart of the URL of this request depends on a [user-provided value](2).",
+      "locations": [
+        {
+          "file": "front/admin_ui/app.py",
+          "startLine": 562,
+          "endLine": 566
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/partial-ssrf",
+      "severity": "error",
+      "name": "Partial server-side request forgery",
+      "description": "Part of the URL of this request depends on a [user-provided value](1).",
+      "locations": [
+        {
+          "file": "front/admin_ui/app.py",
+          "startLine": 597,
+          "endLine": 601
+        }
+      ],
+      "tool": "CodeQL"
+    }
+  ],
+  "total": 4
+}

@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "repo": "skills",
     "status": "success",
     "output_file": "data/results/skills-sbom.json",
@@ -40,5 +41,41 @@
     "status": "success",
     "output_file": "data/results/text-generation-inference-sbom.json",
     "timestamp": "2026-05-08T02:08:35.160302"
+=======
+    "repo": "meshgen",
+    "status": "success",
+    "output_file": "data/results/meshgen-sbom.json",
+    "timestamp": "2026-05-08T02:34:37.170230"
+  },
+  {
+    "repo": "optimum-nvidia",
+    "status": "success",
+    "output_file": "data/results/optimum-nvidia-sbom.json",
+    "timestamp": "2026-05-08T02:34:37.910654"
+  },
+  {
+    "repo": "optimum-quanto",
+    "status": "success",
+    "output_file": "data/results/optimum-quanto-sbom.json",
+    "timestamp": "2026-05-08T02:34:39.042170"
+  },
+  {
+    "repo": "search-and-learn",
+    "status": "success",
+    "output_file": "data/results/search-and-learn-sbom.json",
+    "timestamp": "2026-05-08T02:34:39.127341"
+  },
+  {
+    "repo": "kernels",
+    "status": "success",
+    "output_file": "data/results/kernels-sbom.json",
+    "timestamp": "2026-05-08T02:34:41.560804"
+  },
+  {
+    "repo": "dataset-viewer",
+    "status": "success",
+    "output_file": "data/results/dataset-viewer-sbom.json",
+    "timestamp": "2026-05-08T02:34:43.028293"
+>>>>>>> main
   }
 ]

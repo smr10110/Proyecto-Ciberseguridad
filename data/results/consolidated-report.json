@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "generated_at": "2026-05-08T02:27:00.690878",
   "sbom": [
     {
@@ -42,10 +43,50 @@
       "status": "success",
       "output_file": "data/results/text-generation-inference-sbom.json",
       "timestamp": "2026-05-08T02:08:35.160302"
+=======
+  "generated_at": "2026-05-08T02:39:27.432621",
+  "sbom": [
+    {
+      "repo": "meshgen",
+      "status": "success",
+      "output_file": "data/results/meshgen-sbom.json",
+      "timestamp": "2026-05-08T02:34:37.170230"
+    },
+    {
+      "repo": "optimum-nvidia",
+      "status": "success",
+      "output_file": "data/results/optimum-nvidia-sbom.json",
+      "timestamp": "2026-05-08T02:34:37.910654"
+    },
+    {
+      "repo": "optimum-quanto",
+      "status": "success",
+      "output_file": "data/results/optimum-quanto-sbom.json",
+      "timestamp": "2026-05-08T02:34:39.042170"
+    },
+    {
+      "repo": "search-and-learn",
+      "status": "success",
+      "output_file": "data/results/search-and-learn-sbom.json",
+      "timestamp": "2026-05-08T02:34:39.127341"
+    },
+    {
+      "repo": "kernels",
+      "status": "success",
+      "output_file": "data/results/kernels-sbom.json",
+      "timestamp": "2026-05-08T02:34:41.560804"
+    },
+    {
+      "repo": "dataset-viewer",
+      "status": "success",
+      "output_file": "data/results/dataset-viewer-sbom.json",
+      "timestamp": "2026-05-08T02:34:43.028293"
+>>>>>>> main
     }
   ],
   "grype": [
     {
+<<<<<<< HEAD
       "repo": "skills",
       "status": "success",
       "vulnerabilities": 0,
@@ -93,25 +134,80 @@
       "vulnerabilities": 442,
       "output_file": "data/results/text-generation-inference-grype.json",
       "timestamp": "2026-05-08T02:10:02.541405"
+=======
+      "repo": "meshgen",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/meshgen-grype.json",
+      "timestamp": "2026-05-08T02:35:10.699798"
+    },
+    {
+      "repo": "optimum-quanto",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/optimum-quanto-grype.json",
+      "timestamp": "2026-05-08T02:35:10.719807"
+    },
+    {
+      "repo": "optimum-nvidia",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/optimum-nvidia-grype.json",
+      "timestamp": "2026-05-08T02:35:10.747967"
+    },
+    {
+      "repo": "search-and-learn",
+      "status": "success",
+      "vulnerabilities": 20,
+      "output_file": "data/results/search-and-learn-grype.json",
+      "timestamp": "2026-05-08T02:35:11.394321"
+    },
+    {
+      "repo": "kernels",
+      "status": "success",
+      "vulnerabilities": 14,
+      "output_file": "data/results/kernels-grype.json",
+      "timestamp": "2026-05-08T02:35:11.451785"
+    },
+    {
+      "repo": "dataset-viewer",
+      "status": "success",
+      "vulnerabilities": 634,
+      "output_file": "data/results/dataset-viewer-grype.json",
+      "timestamp": "2026-05-08T02:35:12.872267"
+>>>>>>> main
     }
   ],
   "codeql": [
     {
+<<<<<<< HEAD
       "repo": "skills",
+=======
+      "repo": "meshgen",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
       "findings_count": 0,
+<<<<<<< HEAD
       "output_file": "data/results/skills-codeql.json",
       "timestamp": "2026-05-08T02:16:52.023967"
     },
     {
       "repo": "datasets",
+=======
+      "output_file": "data/results/meshgen-codeql.json",
+      "timestamp": "2026-05-08T02:37:12.530403"
+    },
+    {
+      "repo": "optimum-nvidia",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
+<<<<<<< HEAD
       "findings_count": 3,
       "output_file": "data/results/datasets-codeql.json",
       "timestamp": "2026-05-08T02:19:21.560937"
@@ -129,43 +225,84 @@
     },
     {
       "repo": "sentence-transformers",
+=======
+      "findings_count": 0,
+      "output_file": "data/results/optimum-nvidia-codeql.json",
+      "timestamp": "2026-05-08T02:37:26.552716"
+    },
+    {
+      "repo": "optimum-quanto",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
+<<<<<<< HEAD
       "findings_count": 6,
       "output_file": "data/results/sentence-transformers-codeql.json",
       "timestamp": "2026-05-08T02:22:27.029915"
     },
     {
       "repo": "peft",
+=======
+      "findings_count": 0,
+      "output_file": "data/results/optimum-quanto-codeql.json",
+      "timestamp": "2026-05-08T02:37:54.400636"
+    },
+    {
+      "repo": "kernels",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
+<<<<<<< HEAD
       "findings_count": 1,
       "output_file": "data/results/peft-codeql.json",
       "timestamp": "2026-05-08T02:22:30.624405"
     },
     {
       "repo": "text-generation-inference",
+=======
+      "findings_count": 0,
+      "output_file": "data/results/kernels-codeql.json",
+      "timestamp": "2026-05-08T02:38:25.447383"
+    },
+    {
+      "repo": "search-and-learn",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
+<<<<<<< HEAD
       "findings_count": 1,
       "output_file": "data/results/text-generation-inference-codeql.json",
       "timestamp": "2026-05-08T02:25:29.052952"
     },
     {
       "repo": "trl",
+=======
+      "findings_count": 0,
+      "output_file": "data/results/search-and-learn-codeql.json",
+      "timestamp": "2026-05-08T02:38:28.113461"
+    },
+    {
+      "repo": "dataset-viewer",
+>>>>>>> main
       "status": "success",
       "languages": [
         "python"
       ],
+<<<<<<< HEAD
       "findings_count": 1,
       "output_file": "data/results/trl-codeql.json",
       "timestamp": "2026-05-08T02:25:55.799377"
+=======
+      "findings_count": 4,
+      "output_file": "data/results/dataset-viewer-codeql.json",
+      "timestamp": "2026-05-08T02:39:10.058893"
+>>>>>>> main
     }
   ]
 }

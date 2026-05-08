@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "timestamp": "2026-05-08T02:06:12.219953",
   "total": 7,
   "results": [
@@ -43,6 +44,46 @@
       "url": "https://github.com/huggingface/text-generation-inference",
       "status": "cloned",
       "path": "data/repos/text-generation-inference"
+=======
+  "timestamp": "2026-05-08T02:34:17.225407",
+  "total": 6,
+  "results": [
+    {
+      "repo": "search-and-learn",
+      "url": "https://github.com/huggingface/search-and-learn",
+      "status": "cloned",
+      "path": "data/repos/search-and-learn"
+    },
+    {
+      "repo": "meshgen",
+      "url": "https://github.com/huggingface/meshgen",
+      "status": "cloned",
+      "path": "data/repos/meshgen"
+    },
+    {
+      "repo": "optimum-nvidia",
+      "url": "https://github.com/huggingface/optimum-nvidia",
+      "status": "cloned",
+      "path": "data/repos/optimum-nvidia"
+    },
+    {
+      "repo": "optimum-quanto",
+      "url": "https://github.com/huggingface/optimum-quanto",
+      "status": "cloned",
+      "path": "data/repos/optimum-quanto"
+    },
+    {
+      "repo": "dataset-viewer",
+      "url": "https://github.com/huggingface/dataset-viewer",
+      "status": "cloned",
+      "path": "data/repos/dataset-viewer"
+    },
+    {
+      "repo": "kernels",
+      "url": "https://github.com/huggingface/kernels",
+      "status": "cloned",
+      "path": "data/repos/kernels"
+>>>>>>> main
     }
   ]
 }
