@@ -1,0 +1,51 @@
+[
+  {
+    "repo": "skills",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/skills-grype.json",
+    "timestamp": "2026-05-08T02:09:57.068469"
+  },
+  {
+    "repo": "sentence-transformers",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/sentence-transformers-grype.json",
+    "timestamp": "2026-05-08T02:09:57.332943"
+  },
+  {
+    "repo": "peft",
+    "status": "success",
+    "vulnerabilities": 8,
+    "output_file": "data/results/peft-grype.json",
+    "timestamp": "2026-05-08T02:09:57.979798"
+  },
+  {
+    "repo": "datasets",
+    "status": "success",
+    "vulnerabilities": 24,
+    "output_file": "data/results/datasets-grype.json",
+    "timestamp": "2026-05-08T02:09:58.128034"
+  },
+  {
+    "repo": "trl",
+    "status": "success",
+    "vulnerabilities": 0,
+    "output_file": "data/results/trl-grype.json",
+    "timestamp": "2026-05-08T02:09:59.615524"
+  },
+  {
+    "repo": "lerobot",
+    "status": "success",
+    "vulnerabilities": 59,
+    "output_file": "data/results/lerobot-grype.json",
+    "timestamp": "2026-05-08T02:10:00.039955"
+  },
+  {
+    "repo": "text-generation-inference",
+    "status": "success",
+    "vulnerabilities": 442,
+    "output_file": "data/results/text-generation-inference-grype.json",
+    "timestamp": "2026-05-08T02:10:02.541405"
+  }
+]

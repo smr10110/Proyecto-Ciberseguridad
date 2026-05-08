@@ -1,0 +1,19 @@
+{
+  "findings": [
+    {
+      "rule_id": "py/bind-socket-all-network-interfaces",
+      "severity": "error",
+      "name": "Binding a socket to all network interfaces",
+      "description": "Binding a socket to all interfaces (using [''](1)) is a security risk.",
+      "locations": [
+        {
+          "file": "integration-tests/fixtures/gaudi/service.py",
+          "startLine": 177,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    }
+  ],
+  "total": 1
+}

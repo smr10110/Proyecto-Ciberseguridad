@@ -1,0 +1,44 @@
+[
+  {
+    "repo": "skills",
+    "status": "success",
+    "output_file": "data/results/skills-sbom.json",
+    "timestamp": "2026-05-08T02:08:11.642022"
+  },
+  {
+    "repo": "datasets",
+    "status": "success",
+    "output_file": "data/results/datasets-sbom.json",
+    "timestamp": "2026-05-08T02:08:15.024692"
+  },
+  {
+    "repo": "sentence-transformers",
+    "status": "success",
+    "output_file": "data/results/sentence-transformers-sbom.json",
+    "timestamp": "2026-05-08T02:08:23.218343"
+  },
+  {
+    "repo": "peft",
+    "status": "success",
+    "output_file": "data/results/peft-sbom.json",
+    "timestamp": "2026-05-08T02:08:26.831404"
+  },
+  {
+    "repo": "lerobot",
+    "status": "success",
+    "output_file": "data/results/lerobot-sbom.json",
+    "timestamp": "2026-05-08T02:08:27.006370"
+  },
+  {
+    "repo": "trl",
+    "status": "success",
+    "output_file": "data/results/trl-sbom.json",
+    "timestamp": "2026-05-08T02:08:28.054278"
+  },
+  {
+    "repo": "text-generation-inference",
+    "status": "success",
+    "output_file": "data/results/text-generation-inference-sbom.json",
+    "timestamp": "2026-05-08T02:08:35.160302"
+  }
+]

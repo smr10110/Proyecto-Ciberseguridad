@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-05-08T02:06:12.219953",
+  "total": 7,
+  "results": [
+    {
+      "repo": "datasets",
+      "url": "https://github.com/huggingface/datasets",
+      "status": "cloned",
+      "path": "data/repos/datasets"
+    },
+    {
+      "repo": "trl",
+      "url": "https://github.com/huggingface/trl",
+      "status": "cloned",
+      "path": "data/repos/trl"
+    },
+    {
+      "repo": "skills",
+      "url": "https://github.com/huggingface/skills",
+      "status": "cloned",
+      "path": "data/repos/skills"
+    },
+    {
+      "repo": "sentence-transformers",
+      "url": "https://github.com/huggingface/sentence-transformers",
+      "status": "cloned",
+      "path": "data/repos/sentence-transformers"
+    },
+    {
+      "repo": "lerobot",
+      "url": "https://github.com/huggingface/lerobot",
+      "status": "cloned",
+      "path": "data/repos/lerobot"
+    },
+    {
+      "repo": "peft",
+      "url": "https://github.com/huggingface/peft",
+      "status": "cloned",
+      "path": "data/repos/peft"
+    },
+    {
+      "repo": "text-generation-inference",
+      "url": "https://github.com/huggingface/text-generation-inference",
+      "status": "cloned",
+      "path": "data/repos/text-generation-inference"
+    }
+  ]
+}

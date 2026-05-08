@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-05-08T02:27:00.690878",
+  "sbom": [
+    {
+      "repo": "skills",
+      "status": "success",
+      "output_file": "data/results/skills-sbom.json",
+      "timestamp": "2026-05-08T02:08:11.642022"
+    },
+    {
+      "repo": "datasets",
+      "status": "success",
+      "output_file": "data/results/datasets-sbom.json",
+      "timestamp": "2026-05-08T02:08:15.024692"
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "success",
+      "output_file": "data/results/sentence-transformers-sbom.json",
+      "timestamp": "2026-05-08T02:08:23.218343"
+    },
+    {
+      "repo": "peft",
+      "status": "success",
+      "output_file": "data/results/peft-sbom.json",
+      "timestamp": "2026-05-08T02:08:26.831404"
+    },
+    {
+      "repo": "lerobot",
+      "status": "success",
+      "output_file": "data/results/lerobot-sbom.json",
+      "timestamp": "2026-05-08T02:08:27.006370"
+    },
+    {
+      "repo": "trl",
+      "status": "success",
+      "output_file": "data/results/trl-sbom.json",
+      "timestamp": "2026-05-08T02:08:28.054278"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "output_file": "data/results/text-generation-inference-sbom.json",
+      "timestamp": "2026-05-08T02:08:35.160302"
+    }
+  ],
+  "grype": [
+    {
+      "repo": "skills",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/skills-grype.json",
+      "timestamp": "2026-05-08T02:09:57.068469"
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/sentence-transformers-grype.json",
+      "timestamp": "2026-05-08T02:09:57.332943"
+    },
+    {
+      "repo": "peft",
+      "status": "success",
+      "vulnerabilities": 8,
+      "output_file": "data/results/peft-grype.json",
+      "timestamp": "2026-05-08T02:09:57.979798"
+    },
+    {
+      "repo": "datasets",
+      "status": "success",
+      "vulnerabilities": 24,
+      "output_file": "data/results/datasets-grype.json",
+      "timestamp": "2026-05-08T02:09:58.128034"
+    },
+    {
+      "repo": "trl",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/trl-grype.json",
+      "timestamp": "2026-05-08T02:09:59.615524"
+    },
+    {
+      "repo": "lerobot",
+      "status": "success",
+      "vulnerabilities": 59,
+      "output_file": "data/results/lerobot-grype.json",
+      "timestamp": "2026-05-08T02:10:00.039955"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "vulnerabilities": 442,
+      "output_file": "data/results/text-generation-inference-grype.json",
+      "timestamp": "2026-05-08T02:10:02.541405"
+    }
+  ],
+  "codeql": [
+    {
+      "repo": "skills",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 0,
+      "output_file": "data/results/skills-codeql.json",
+      "timestamp": "2026-05-08T02:16:52.023967"
+    },
+    {
+      "repo": "datasets",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 3,
+      "output_file": "data/results/datasets-codeql.json",
+      "timestamp": "2026-05-08T02:19:21.560937"
+    },
+    {
+      "repo": "lerobot",
+      "status": "error",
+      "errors": [
+        {
+          "language": "python",
+          "phase": "create",
+          "error": "Timeout: Command exceeded 600 seconds."
+        }
+      ]
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 6,
+      "output_file": "data/results/sentence-transformers-codeql.json",
+      "timestamp": "2026-05-08T02:22:27.029915"
+    },
+    {
+      "repo": "peft",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/peft-codeql.json",
+      "timestamp": "2026-05-08T02:22:30.624405"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/text-generation-inference-codeql.json",
+      "timestamp": "2026-05-08T02:25:29.052952"
+    },
+    {
+      "repo": "trl",
+      "status": "success",
+      "languages": [
+        "python"
+      ],
+      "findings_count": 1,
+      "output_file": "data/results/trl-codeql.json",
+      "timestamp": "2026-05-08T02:25:55.799377"
+    }
+  ]
+}
