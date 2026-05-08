@@ -1,124 +1,86 @@
 {
-  "generated_at": "2026-05-08T05:58:30.617216",
+  "generated_at": "2026-05-08T06:42:23.085962",
   "sbom": [
     {
-      "repo": "alignment-handbook",
+      "repo": "pytorch-image-models",
       "status": "success",
-      "output_file": "data/results/alignment-handbook-sbom.json",
-      "timestamp": "2026-05-08T05:37:25.243166"
+      "output_file": "data/results/pytorch-image-models-sbom.json",
+      "timestamp": "2026-05-08T05:30:56.205653"
     },
     {
-      "repo": "autotrain-advanced",
+      "repo": "sentence-transformers",
       "status": "success",
-      "output_file": "data/results/autotrain-advanced-sbom.json",
-      "timestamp": "2026-05-08T05:37:26.377074"
+      "output_file": "data/results/sentence-transformers-sbom.json",
+      "timestamp": "2026-05-08T05:31:09.134774"
     },
     {
-      "repo": "accelerate",
+      "repo": "speech-to-speech",
       "status": "success",
-      "output_file": "data/results/accelerate-sbom.json",
-      "timestamp": "2026-05-08T05:37:26.809106"
+      "output_file": "data/results/speech-to-speech-sbom.json",
+      "timestamp": "2026-05-08T05:31:16.053183"
     },
     {
-      "repo": "dataset-viewer",
+      "repo": "smolagents",
       "status": "success",
-      "output_file": "data/results/dataset-viewer-sbom.json",
-      "timestamp": "2026-05-08T05:37:30.141139"
+      "output_file": "data/results/smolagents-sbom.json",
+      "timestamp": "2026-05-08T05:31:17.115163"
     },
     {
-      "repo": "diffusers",
+      "repo": "skills",
       "status": "success",
-      "output_file": "data/results/diffusers-sbom.json",
-      "timestamp": "2026-05-08T05:37:41.871003"
+      "output_file": "data/results/skills-sbom.json",
+      "timestamp": "2026-05-08T05:31:20.211280"
+    },
+    {
+      "repo": "transformers",
+      "status": "success",
+      "output_file": "data/results/transformers-sbom.json",
+      "timestamp": "2026-05-08T05:32:58.519760"
     }
   ],
   "grype": [
     {
-      "repo": "alignment-handbook",
+      "repo": "skills",
       "status": "success",
       "vulnerabilities": 0,
-      "output_file": "data/results/alignment-handbook-grype.json",
-      "timestamp": "2026-05-08T05:38:00.079329"
+      "output_file": "data/results/skills-grype.json",
+      "timestamp": "2026-05-08T05:35:02.988303"
     },
     {
-      "repo": "accelerate",
+      "repo": "sentence-transformers",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/sentence-transformers-grype.json",
+      "timestamp": "2026-05-08T05:35:03.250289"
+    },
+    {
+      "repo": "pytorch-image-models",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/pytorch-image-models-grype.json",
+      "timestamp": "2026-05-08T05:35:03.275646"
+    },
+    {
+      "repo": "speech-to-speech",
       "status": "success",
       "vulnerabilities": 2,
-      "output_file": "data/results/accelerate-grype.json",
-      "timestamp": "2026-05-08T05:38:00.268125"
+      "output_file": "data/results/speech-to-speech-grype.json",
+      "timestamp": "2026-05-08T05:35:03.318179"
     },
     {
-      "repo": "autotrain-advanced",
+      "repo": "smolagents",
       "status": "success",
-      "vulnerabilities": 43,
-      "output_file": "data/results/autotrain-advanced-grype.json",
-      "timestamp": "2026-05-08T05:38:00.314152"
+      "vulnerabilities": 0,
+      "output_file": "data/results/smolagents-grype.json",
+      "timestamp": "2026-05-08T05:35:03.342491"
     },
     {
-      "repo": "diffusers",
+      "repo": "transformers",
       "status": "success",
-      "vulnerabilities": 98,
-      "output_file": "data/results/diffusers-grype.json",
-      "timestamp": "2026-05-08T05:38:00.570534"
-    },
-    {
-      "repo": "dataset-viewer",
-      "status": "success",
-      "vulnerabilities": 634,
-      "output_file": "data/results/dataset-viewer-grype.json",
-      "timestamp": "2026-05-08T05:38:02.115208"
+      "vulnerabilities": 5,
+      "output_file": "data/results/transformers-grype.json",
+      "timestamp": "2026-05-08T05:35:20.352042"
     }
   ],
-  "codeql": [
-    {
-      "repo": "autotrain-advanced",
-      "status": "success",
-      "languages": [
-        "python"
-      ],
-      "findings_count": 3,
-      "output_file": "data/results/autotrain-advanced-codeql.json",
-      "timestamp": "2026-05-08T05:40:46.523104"
-    },
-    {
-      "repo": "accelerate",
-      "status": "success",
-      "languages": [
-        "python"
-      ],
-      "findings_count": 1,
-      "output_file": "data/results/accelerate-codeql.json",
-      "timestamp": "2026-05-08T05:41:18.182959"
-    },
-    {
-      "repo": "alignment-handbook",
-      "status": "success",
-      "languages": [
-        "python"
-      ],
-      "findings_count": 0,
-      "output_file": "data/results/alignment-handbook-codeql.json",
-      "timestamp": "2026-05-08T05:41:25.373098"
-    },
-    {
-      "repo": "dataset-viewer",
-      "status": "success",
-      "languages": [
-        "python"
-      ],
-      "findings_count": 4,
-      "output_file": "data/results/dataset-viewer-codeql.json",
-      "timestamp": "2026-05-08T05:42:40.399730"
-    },
-    {
-      "repo": "diffusers",
-      "status": "success",
-      "languages": [
-        "python"
-      ],
-      "findings_count": 3,
-      "output_file": "data/results/diffusers-codeql.json",
-      "timestamp": "2026-05-08T05:58:09.600961"
-    }
-  ]
+  "codeql": []
 }

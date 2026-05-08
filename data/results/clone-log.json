@@ -1,36 +1,42 @@
 {
-  "timestamp": "2026-05-08T05:37:06.270711",
-  "total": 5,
+  "timestamp": "2026-05-08T05:27:56.816662",
+  "total": 6,
   "results": [
     {
-      "repo": "alignment-handbook",
-      "url": "https://github.com/huggingface/alignment-handbook",
-      "status": "cloned",
-      "path": "data/repos/alignment-handbook"
+      "repo": "skills",
+      "url": "https://github.com/huggingface/skills",
+      "status": "updated",
+      "path": "data/repos/skills"
     },
     {
-      "repo": "autotrain-advanced",
-      "url": "https://github.com/huggingface/autotrain-advanced",
-      "status": "cloned",
-      "path": "data/repos/autotrain-advanced"
+      "repo": "sentence-transformers",
+      "url": "https://huggingface.co/sentence-transformers",
+      "status": "updated",
+      "path": "data/repos/sentence-transformers"
     },
     {
-      "repo": "accelerate",
-      "url": "https://github.com/huggingface/accelerate",
+      "repo": "speech-to-speech",
+      "url": "https://github.com/huggingface/speech-to-speech",
       "status": "cloned",
-      "path": "data/repos/accelerate"
+      "path": "data/repos/speech-to-speech"
     },
     {
-      "repo": "dataset-viewer",
-      "url": "https://github.com/huggingface/dataset-viewer",
+      "repo": "smolagents",
+      "url": "https://github.com/huggingface/smolagents",
       "status": "cloned",
-      "path": "data/repos/dataset-viewer"
+      "path": "data/repos/smolagents"
     },
     {
-      "repo": "diffusers",
-      "url": "https://github.com/huggingface/diffusers",
+      "repo": "pytorch-image-models",
+      "url": "https://github.com/huggingface/pytorch-image-models",
       "status": "cloned",
-      "path": "data/repos/diffusers"
+      "path": "data/repos/pytorch-image-models"
+    },
+    {
+      "repo": "transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "status": "cloned",
+      "path": "data/repos/transformers"
     }
   ]
 }
