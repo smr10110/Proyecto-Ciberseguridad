@@ -12,24 +12,19 @@ async function fetchJSON(url) {
 }
 
 async function loadData() {
-  const report = await fetchJSON(`${RESULTS}/consolidated-report.json`)
-
-  const grypeEntries = (report.grype || []).filter(e => e.status === 'success')
-  const codeqlEntries = (report.codeql || []).filter(e =>
-    e.status === 'success' || e.status === 'partial'
-  )
-  const sbomEntries = (report.sbom || []).filter(e => e.status === 'success')
+  // Descubrir repos leyendo results/ directamente (sin consolidated-report)
+  const repos = await fetchJSON(`${RESULTS}/_index`)
 
   const [grypeRaw, codeqlRaw, sbomRaw] = await Promise.all([
     Promise.all(
-      grypeEntries.map(async e => {
+      repos.map(async repo => {
         try {
-          const d = await fetchJSON(`${RESULTS}/${e.repo}-grype.json`)
+          const d = await fetchJSON(`${RESULTS}/${repo}-grype.json`)
           return (d.matches || []).map(m => {
             const cvssArr = m.vulnerability?.cvss ?? []
             const cvssScore = cvssArr.reduce((max, c) => Math.max(max, c.metrics?.baseScore ?? 0), 0)
             return {
-              repo: e.repo,
+              repo,
               id: m.vulnerability?.id ?? 'N/A',
               severity: m.vulnerability?.severity ?? 'Unknown',
               pkg: m.artifact?.name ?? 'unknown',
@@ -47,22 +42,22 @@ async function loadData() {
       })
     ),
     Promise.all(
-      codeqlEntries.map(async e => {
+      repos.map(async repo => {
         try {
-          const d = await fetchJSON(`${RESULTS}/${e.repo}-codeql.json`)
-          return (d.findings || []).map(f => ({ ...f, repo: e.repo }))
+          const d = await fetchJSON(`${RESULTS}/${repo}-codeql.json`)
+          return (d.findings || []).map(f => ({ ...f, repo }))
         } catch {
           return []
         }
       })
     ),
     Promise.all(
-      sbomEntries.map(async e => {
+      repos.map(async repo => {
         try {
-          const d = await fetchJSON(`${RESULTS}/${e.repo}-sbom.json`)
-          return { repo: e.repo, artifacts: d.artifacts || [] }
+          const d = await fetchJSON(`${RESULTS}/${repo}-sbom.json`)
+          return { repo, artifacts: d.artifacts || [] }
         } catch {
-          return { repo: e.repo, artifacts: [] }
+          return { repo, artifacts: [] }
         }
       })
     ),
@@ -199,14 +194,7 @@ async function loadData() {
     .sort((a, b) => b.cvssScore - a.cvssScore)
     .slice(0, 5)
 
-  const repos = [...new Set([
-    ...grypeEntries.map(e => e.repo),
-    ...codeqlEntries.map(e => e.repo),
-    ...sbomEntries.map(e => e.repo),
-  ])]
-
   return {
-    report,
     repos,
     allVulns,
     allFindings,
