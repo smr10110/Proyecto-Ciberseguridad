@@ -1,54 +1,42 @@
 {
-  "timestamp": "2026-05-08T02:06:41.382247",
-  "total": 8,
+  "timestamp": "2026-05-08T02:34:17.225407",
+  "total": 6,
   "results": [
     {
-      "repo": "parler-tts",
-      "url": "https://github.com/huggingface/parler-tts",
+      "repo": "search-and-learn",
+      "url": "https://github.com/huggingface/search-and-learn",
       "status": "cloned",
-      "path": "data/repos/parler-tts"
+      "path": "data/repos/search-and-learn"
     },
     {
-      "repo": "alignment-handbook",
-      "url": "https://github.com/huggingface/alignment-handbook",
+      "repo": "meshgen",
+      "url": "https://github.com/huggingface/meshgen",
       "status": "cloned",
-      "path": "data/repos/alignment-handbook"
+      "path": "data/repos/meshgen"
     },
     {
-      "repo": "ml-intern",
-      "url": "https://github.com/huggingface/ml-intern",
+      "repo": "optimum-nvidia",
+      "url": "https://github.com/huggingface/optimum-nvidia",
       "status": "cloned",
-      "path": "data/repos/ml-intern"
+      "path": "data/repos/optimum-nvidia"
     },
     {
-      "repo": "nanoVLM",
-      "url": "https://github.com/huggingface/nanoVLM",
+      "repo": "optimum-quanto",
+      "url": "https://github.com/huggingface/optimum-quanto",
       "status": "cloned",
-      "path": "data/repos/nanoVLM"
+      "path": "data/repos/optimum-quanto"
     },
     {
-      "repo": "speech-to-speech",
-      "url": "https://github.com/huggingface/speech-to-speech",
+      "repo": "dataset-viewer",
+      "url": "https://github.com/huggingface/dataset-viewer",
       "status": "cloned",
-      "path": "data/repos/speech-to-speech"
+      "path": "data/repos/dataset-viewer"
     },
     {
-      "repo": "accelerate",
-      "url": "https://github.com/huggingface/accelerate",
+      "repo": "kernels",
+      "url": "https://github.com/huggingface/kernels",
       "status": "cloned",
-      "path": "data/repos/accelerate"
-    },
-    {
-      "repo": "distil-whisper",
-      "url": "https://github.com/huggingface/distil-whisper",
-      "status": "cloned",
-      "path": "data/repos/distil-whisper"
-    },
-    {
-      "repo": "autotrain-advanced",
-      "url": "https://github.com/huggingface/autotrain-advanced",
-      "status": "cloned",
-      "path": "data/repos/autotrain-advanced"
+      "path": "data/repos/kernels"
     }
   ]
 }
