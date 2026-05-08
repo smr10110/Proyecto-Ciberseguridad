@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/Docker-Dev%20Container-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
-<h1 align="center">🔒 Security Analyzer</h1>
+<h1 align="center">Security Analyzer</h1>
 
 <p align="center">
   <strong>Pipeline automatizado de analisis de seguridad para repositorios de codigo abierto</strong><br/>
@@ -20,248 +20,135 @@
 
 ## Descripcion General
 
-**Security Analyzer** es una herramienta de linea de comandos que automatiza el analisis de seguridad de repositorios de GitHub. El sistema implementa un pipeline de tres etapas — **Miner**, **Analyzer** y **Visualizer** — que permite clonar repositorios, generar inventarios de dependencias (SBOM), detectar vulnerabilidades conocidas (CVEs), realizar analisis estatico de codigo fuente y presentar los resultados en un dashboard interactivo en tiempo real.
+**Security Analyzer** automatiza el analisis de seguridad de repositorios de GitHub mediante un pipeline de tres etapas:
 
-El proyecto esta disenado para ejecutarse completamente dentro de un **Dev Container** de Docker, que preinstala todas las herramientas necesarias (CodeQL, Grype, Syft, Python, Node.js, Java y Maven), garantizando un entorno reproducible y sin configuracion manual.
+- **Miner** — clona repositorios, genera inventarios de dependencias (SBOM), detecta CVEs con Grype y analiza el codigo fuente con CodeQL. Guarda todos los resultados como JSON en `data/results/`.
+- **Analyzer** — notebooks Jupyter que consumen los JSON del Miner para caracterizar vulnerabilidades, identificar patrones y generar visualizaciones estadisticas.
+- **Visualizer** — dashboard web React que lee `data/results/` directamente y presenta los hallazgos en tiempo real con auto-refresh.
 
----
-
-## Caracteristicas Principales
-
-| Capacidad | Descripcion |
-|---|---|
-| 📥 **Clonacion inteligente** | Clona repositorios individuales o todos los de una organizacion de GitHub, filtrando por actividad reciente, forks y archivados |
-| 📦 **Generacion de SBOM** | Genera la lista completa de componentes y dependencias de cada repositorio con **Syft** |
-| 🔓 **Escaneo de vulnerabilidades** | Detecta CVEs conocidos en dependencias usando **Grype** contra las bases de datos NVD, GitHub Advisory y OSV |
-| 🔍 **Analisis estatico de codigo** | Identifica vulnerabilidades en el codigo fuente (SQL injection, XSS, credenciales expuestas) con **CodeQL** |
-| 🧠 **Caracterizacion sistematica** | Consolida y estructura los hallazgos en un dataset unificado, identificando patrones y metricas de riesgo |
-| 📊 **Dashboard interactivo** | Aplicacion web React con graficos en tiempo real (Recharts), con auto-refresh y vistas por severidad, repositorio y tipo |
-| 🌊 **Modo Stream** | Pipeline end-to-end que procesa cada repositorio de forma individual y actualiza el dashboard en tiempo real |
-| ⚡ **Ejecucion paralela** | Procesamiento concurrente configurable con `ThreadPoolExecutor` para acelerar el analisis de multiples repositorios |
-| 🐳 **Entorno reproducible** | Dev Container con todas las herramientas preinstaladas; cero configuracion manual |
+El proyecto se ejecuta dentro de un **Dev Container** de Docker que preinstala todas las herramientas necesarias.
 
 ---
 
-## Arquitectura del Sistema
-
-El proyecto sigue una arquitectura de **pipeline de tres capas** donde cada componente tiene una responsabilidad bien definida:
+## Arquitectura
 
 ```
-┌──────────────────────┬──────────────────────┬──────────────────────────────┐
-│                      SECURITY ANALYZER                                    │
-├──────────────────────┬──────────────────────┬──────────────────────────────┤
-│                      │                      │                              │
-│  🔨 MINER            │  🧠 ANALYZER         │  📊 VISUALIZER               │
-│  (Recoleccion)       │  (Procesamiento)     │  (Presentacion)              │
-│                      │                      │                              │
-│  clone_repos.py      │  analyzer.py         │  React + Vite + Recharts     │
-│  generate_sboms.py   │                      │  Dashboard interactivo       │
-│  generate_grype.py   │  Consolida datos     │  Auto-refresh (5s)           │
-│  generate_codeql.py  │  de Grype + CodeQL   │  4 vistas:                   │
-│  generate_reports.py │  en un dataset       │    - Dashboard               │
-│                      │  unificado           │    - CVEs (Grype)            │
-│                      │                      │    - CodeQL                  │
-│  Salida:             │  Salida:             │    - SBOM                    │
-│   data/results/      │   data.json          │                              │
-│   *-sbom.json        │   analysis_summary   │  Acceso:                     │
-│   *-grype.json       │   dataset.csv        │   localhost:5173             │
-│   *-codeql.json      │                      │                              │
-└──────────────────────┴──────────────────────┴──────────────────────────────┘
-```
-
----
-
-## Estructura del Proyecto
-
-```
-📁 security-analyzer/
-│
-├── 📄 main.py                      # CLI principal (Click) — punto de entrada
-├── 📄 pyproject.toml                # Dependencias Python (uv/pip)
-├── 📄 uv.lock                      # Lock file de dependencias
-├── 📄 .gitignore
-│
-├── 📁 scripts/                      # Modulos del Miner + Analyzer
-│   ├── clone_repos.py              #   Clonacion de repositorios (GitHub API)
-│   ├── generate_sboms.py           #   Generacion de SBOMs (Syft)
-│   ├── generate_grype.py           #   Escaneo de vulnerabilidades (Grype)
-│   ├── generate_codeql.py          #   Analisis estatico (CodeQL)
-│   ├── generate_reports.py         #   Generacion de reportes consolidados
-│   ├── analyzer.py                 #   Caracterizacion sistematica de hallazgos
-│   └── subprocess_utils.py         #   Utilidad para ejecucion de comandos
-│
-├── 📁 data/
-│   ├── config.json                 # Configuracion de repositorios y opciones
-│   ├── 📁 repos/                   # Repositorios clonados (git ignored)
-│   └── 📁 results/                 # Resultados de analisis (git ignored)
-│       ├── *-sbom.json             #   SBOM por repositorio
-│       ├── *-grype.json            #   Vulnerabilidades por repositorio
-│       ├── *-codeql.json           #   Hallazgos CodeQL por repositorio
-│       ├── analysis_summary.json   #   Resumen del Analyzer
-│       ├── vulnerabilities_dataset.csv  # Dataset consolidado
-│       ├── consolidated-report.json     # Reporte final
-│       └── 📁 databases/          #   Bases de datos CodeQL
-│
-├── 📁 nbs/                         # Jupyter Notebooks
-│   ├── 00_pipeline_completo.ipynb  #   Pipeline completo en notebook
-│   └── 01_analisis.ipynb           #   Analisis cuantitativo y cualitativo
-│
-├── 📁 visualizer/                   # Dashboard interactivo (React)
-│   ├── package.json                #   Dependencias Node.js
-│   ├── vite.config.js              #   Configuracion de Vite
-│   ├── tailwind.config.js          #   Configuracion de Tailwind CSS
-│   ├── 📁 public/
-│   │   └── data.json               #   Datos inyectados por el Analyzer
-│   └── 📁 src/
-│       ├── main.jsx                #   Punto de entrada React
-│       ├── App.jsx                 #   Componente principal + navegacion
-│       ├── index.css               #   Estilos globales
-│       ├── 📁 hooks/
-│       │   └── useData.js          #   Hook para carga y auto-refresh de datos
-│       └── 📁 pages/
-│           ├── Dashboard.jsx       #   Vista principal con KPIs y graficos
-│           ├── VulnPage.jsx        #   Vista de CVEs (Grype)
-│           ├── CodeQLPage.jsx      #   Vista de hallazgos CodeQL
-│           └── SbomPage.jsx        #   Vista de inventario SBOM
-│
-├── 📁 .devcontainer/               # Entorno de desarrollo containerizado
-│   ├── Dockerfile                  #   Python 3.11 + CodeQL + Grype + Syft + Node.js + Java
-│   └── devcontainer.json           #   Configuracion de VS Code + extensiones
-│
-├── 📄 GUIA_DE_USO.md               # Guia paso a paso completa
-└── 📄 analisis_vulnerabilidades.md  # Analisis cualitativo y cuantitativo de resultados
+┌─────────────────────┬──────────────────────┬─────────────────────────────┐
+│     MINER           │      ANALYZER        │       VISUALIZER            │
+│  (Recoleccion)      │  (Procesamiento)     │    (Presentacion)           │
+│                     │                      │                             │
+│  clone_repos.py     │  01_analisis_        │  React 18 + Vite            │
+│  generate_sboms.py  │  vulnerabilidades    │  Recharts + Tailwind        │
+│  generate_grype.py  │  .ipynb              │  Auto-refresh (30s)         │
+│  generate_codeql.py │                      │                             │
+│  generate_reports.py│  Notebooks Jupyter:  │  5 vistas:                  │
+│  analyzer.py        │  - Dist. por         │  - Dashboard                │
+│                     │    severidad         │  - Repos                    │
+│  Salida:            │  - Hallazgos por     │  - CVEs (Grype)             │
+│  data/results/      │    repositorio       │  - CodeQL                   │
+│  *-sbom.json        │  - Top reglas        │  - SBOM                     │
+│  *-grype.json       │  - Top paquetes      │                             │
+│  *-codeql.json      │  - Fix availability  │  Acceso:                    │
+│  *-summary.json     │                      │  localhost:5173             │
+└─────────────────────┴──────────────────────┴─────────────────────────────┘
 ```
 
 ---
 
 ## Requisitos Previos
 
-| Requisito | Version | Verificacion |
-|---|---|---|
-| **Docker Desktop** | Ultima estable | `docker --version` |
-| **VS Code** | Ultima estable | — |
-| **Extension Dev Containers** | — | Panel de extensiones de VS Code |
-| **Git** | 2.x+ | `git --version` |
+| Requisito | Verificacion |
+|---|---|
+| **Docker Desktop** | `docker --version` |
+| **VS Code** | — |
+| **Extension Dev Containers** | Panel de extensiones de VS Code |
 
-> **Nota:** Todas las herramientas de analisis (CodeQL, Grype, Syft, Python, Node.js, Java, Maven) se instalan automaticamente dentro del Dev Container. No es necesario instalarlas en la maquina local.
+> Todas las herramientas de analisis (CodeQL, Grype, Syft, Python 3.11, Node.js, Java) se instalan automaticamente dentro del Dev Container.
 
 ---
 
 ## Inicio Rapido
 
-### 1. Clonar el repositorio y abrir en Dev Container
+### 1. Abrir en Dev Container
 
 ```bash
 git clone <URL_DEL_REPOSITORIO>
-cd security-analyzer
+cd "Proyecto-Ciberseguridad"
 code .
 ```
 
-En VS Code: `F1` → **Dev Containers: Reopen in Container** → esperar la construccion (~5-15 min la primera vez).
+En VS Code: `F1` → **Dev Containers: Reopen in Container** (~5-15 min la primera vez).
 
-### 2. Configurar repositorios a analizar
+### 2. Configurar repositorios
 
-Editar `data/config.json` con las URLs o nombres de organizaciones deseadas:
+Editar `data/config.json`:
 
 ```json
 {
     "repositories": [
-        "https://github.com/pallets/flask",
-        "https://github.com/psf/requests"
-    ],
-    "organizations": ["OWASP"],
-    "clone_options": {
-        "max_inactive_days": 30,
-        "skip_archived": true,
-        "skip_forks": true,
-        "max_repos": 50
-    }
+        "https://github.com/org/repo"
+    ]
 }
 ```
 
-### 3. Ejecutar el pipeline completo
+### 3. Ejecutar el Miner
 
 ```bash
-# Pipeline completo (clone → sbom → grype → codeql → analyzer → report)
+# Pipeline completo: clone → sbom → grype → codeql → report
 uv run python main.py all
 ```
 
-### 4. Iniciar el Visualizer
+### 4. Abrir el Visualizer
 
 ```bash
 cd visualizer
-npm install
+npm install   # solo la primera vez
 npm run dev
-# → Abrir http://localhost:5173
+# → http://localhost:5173
 ```
 
----
+### 5. Ejecutar el Analyzer
 
-## Comandos Disponibles
+Abrir en Jupyter (dentro del Dev Container):
 
-| Comando | Descripcion |
-|---|---|
-| `uv run python main.py clone` | 📥 Clonar repositorios desde `config.json` |
-| `uv run python main.py sbom` | 📦 Generar SBOMs con Syft |
-| `uv run python main.py grype` | 🔓 Escanear vulnerabilidades con Grype |
-| `uv run python main.py codeql` | 🔍 Analizar codigo con CodeQL |
-| `uv run python main.py analyze` | 🧠 Ejecutar el Analyzer (genera `data.json` para el Visualizer) |
-| `uv run python main.py report` | 📊 Generar reporte consolidado |
-| `uv run python main.py all` | 🚀 Ejecutar pipeline completo |
-| `uv run python main.py stream` | 🌊 Pipeline end-to-end por repositorio (actualiza dashboard en vivo) |
-
-Todas las opciones aceptan flags como `--config`, `--repos-dir`, `--output-dir` y `--workers`. Consultar `--help` para mas detalles.
+```
+nbs/01_analisis_vulnerabilidades.ipynb
+```
 
 ---
 
 ## Stack Tecnologico
 
-### Backend (Miner + Analyzer)
+### Miner (Python)
 
 | Tecnologia | Uso |
 |---|---|
-| **Python 3.11+** | Lenguaje principal del pipeline |
-| **Click** | Framework CLI para la interfaz de linea de comandos |
-| **Rich** | Tablas y output enriquecido en terminal |
-| **Pandas** | Procesamiento y estructuracion de datasets |
-| **Requests** | Comunicacion con la API de GitHub |
-| **ThreadPoolExecutor** | Ejecucion paralela de tareas |
+| **Python 3.11** | Lenguaje principal |
+| **Click** | CLI |
+| **Rich** | Output en terminal |
+| **Pandas** | Procesamiento de datos |
+| **ThreadPoolExecutor** | Ejecucion paralela |
 
 ### Herramientas de Analisis
 
 | Herramienta | Funcion |
 |---|---|
-| **Syft** (Anchore) | Generacion de SBOM (Software Bill of Materials) |
-| **Grype** (Anchore) | Deteccion de CVEs en dependencias (NVD, GitHub Advisory, OSV) |
-| **CodeQL** (GitHub) | Analisis estatico de codigo fuente (Python, JS, Java, C++, C#) |
+| **Syft** | Generacion de SBOM |
+| **Grype** | Deteccion de CVEs (NVD, GitHub Advisory, OSV) |
+| **CodeQL** | Analisis estatico (Python, JS, Java, C++, C#) |
 
-### Frontend (Visualizer)
+### Visualizer (Frontend)
 
 | Tecnologia | Uso |
 |---|---|
-| **React 18** | Framework de interfaz de usuario |
-| **Vite 5** | Bundler y servidor de desarrollo |
+| **React 18** | Framework UI |
+| **Vite 5** | Build tool + servidor dev |
 | **Recharts** | Graficos interactivos |
-| **Tailwind CSS** | Estilos utilitarios |
-| **Lucide React** | Iconografia |
-
-### Infraestructura
-
-| Tecnologia | Uso |
-|---|---|
-| **Docker** | Containerizacion del entorno de desarrollo |
-| **Dev Containers** | Integracion con VS Code |
-| **uv** (Astral) | Gestor de paquetes y entornos Python |
-
----
-
-## Documentacion Adicional
-
-- **[GUIA_DE_USO.md](GUIA_DE_USO.md)** — Guia paso a paso con ejemplos detallados, troubleshooting y capturas de salida esperada.
-- **[analisis_vulnerabilidades.md](analisis_vulnerabilidades.md)** — Analisis cuantitativo y cualitativo completo de los resultados obtenidos sobre repositorios de la organizacion Apache.
+| **Tailwind CSS** | Estilos |
+| **Lucide React** | Iconos |
 
 ---
 
 ## Licencia
 
-Proyecto academico desarrollado para el curso de Ciberseguridad (ICC610) — 2026.
+Proyecto academico — Ciberseguridad (ICC610) — 2026.
