@@ -1,0 +1,102 @@
+[
+  {
+    "repo": "datasets",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "diffusers",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "accelerate",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "autotrain-advanced",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "alignment-handbook",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "lerobot",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "nanoVLM",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "distil-whisper",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "ml-intern",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "open-r1",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "parler-tts",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "pytorch-image-models",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "peft",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "sentence-transformers",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "skills",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "text-generation-inference",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "smolagents",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "speech-to-speech",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "transformers",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  },
+  {
+    "repo": "trl",
+    "status": "skipped",
+    "reason": "no_supported_languages"
+  }
+]

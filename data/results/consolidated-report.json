@@ -1,0 +1,369 @@
+{
+  "generated_at": "2026-05-08T02:55:16.461842",
+  "sbom": [
+    {
+      "repo": "alignment-handbook",
+      "status": "success",
+      "output_file": "data/results/alignment-handbook-sbom.json",
+      "timestamp": "2026-05-08T02:52:57.955150"
+    },
+    {
+      "repo": "autotrain-advanced",
+      "status": "success",
+      "output_file": "data/results/autotrain-advanced-sbom.json",
+      "timestamp": "2026-05-08T02:52:57.974674"
+    },
+    {
+      "repo": "accelerate",
+      "status": "success",
+      "output_file": "data/results/accelerate-sbom.json",
+      "timestamp": "2026-05-08T02:52:57.977380"
+    },
+    {
+      "repo": "diffusers",
+      "status": "success",
+      "output_file": "data/results/diffusers-sbom.json",
+      "timestamp": "2026-05-08T02:52:58.124598"
+    },
+    {
+      "repo": "datasets",
+      "status": "success",
+      "output_file": "data/results/datasets-sbom.json",
+      "timestamp": "2026-05-08T02:52:58.193978"
+    },
+    {
+      "repo": "lerobot",
+      "status": "success",
+      "output_file": "data/results/lerobot-sbom.json",
+      "timestamp": "2026-05-08T02:53:00.472319"
+    },
+    {
+      "repo": "nanoVLM",
+      "status": "success",
+      "output_file": "data/results/nanoVLM-sbom.json",
+      "timestamp": "2026-05-08T02:53:00.775797"
+    },
+    {
+      "repo": "ml-intern",
+      "status": "success",
+      "output_file": "data/results/ml-intern-sbom.json",
+      "timestamp": "2026-05-08T02:53:00.917163"
+    },
+    {
+      "repo": "distil-whisper",
+      "status": "success",
+      "output_file": "data/results/distil-whisper-sbom.json",
+      "timestamp": "2026-05-08T02:53:00.974754"
+    },
+    {
+      "repo": "open-r1",
+      "status": "success",
+      "output_file": "data/results/open-r1-sbom.json",
+      "timestamp": "2026-05-08T02:53:01.133830"
+    },
+    {
+      "repo": "parler-tts",
+      "status": "success",
+      "output_file": "data/results/parler-tts-sbom.json",
+      "timestamp": "2026-05-08T02:53:03.063075"
+    },
+    {
+      "repo": "peft",
+      "status": "success",
+      "output_file": "data/results/peft-sbom.json",
+      "timestamp": "2026-05-08T02:53:03.395288"
+    },
+    {
+      "repo": "pytorch-image-models",
+      "status": "success",
+      "output_file": "data/results/pytorch-image-models-sbom.json",
+      "timestamp": "2026-05-08T02:53:03.672329"
+    },
+    {
+      "repo": "skills",
+      "status": "success",
+      "output_file": "data/results/skills-sbom.json",
+      "timestamp": "2026-05-08T02:53:03.724458"
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "success",
+      "output_file": "data/results/sentence-transformers-sbom.json",
+      "timestamp": "2026-05-08T02:53:03.732355"
+    },
+    {
+      "repo": "smolagents",
+      "status": "success",
+      "output_file": "data/results/smolagents-sbom.json",
+      "timestamp": "2026-05-08T02:53:05.650514"
+    },
+    {
+      "repo": "speech-to-speech",
+      "status": "success",
+      "output_file": "data/results/speech-to-speech-sbom.json",
+      "timestamp": "2026-05-08T02:53:05.803277"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "output_file": "data/results/text-generation-inference-sbom.json",
+      "timestamp": "2026-05-08T02:53:06.122032"
+    },
+    {
+      "repo": "transformers",
+      "status": "success",
+      "output_file": "data/results/transformers-sbom.json",
+      "timestamp": "2026-05-08T02:53:06.197368"
+    },
+    {
+      "repo": "trl",
+      "status": "success",
+      "output_file": "data/results/trl-sbom.json",
+      "timestamp": "2026-05-08T02:53:06.331506"
+    }
+  ],
+  "grype": [
+    {
+      "repo": "datasets",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/datasets-grype.json",
+      "timestamp": "2026-05-08T02:54:32.688920"
+    },
+    {
+      "repo": "diffusers",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/diffusers-grype.json",
+      "timestamp": "2026-05-08T02:54:32.691289"
+    },
+    {
+      "repo": "alignment-handbook",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/alignment-handbook-grype.json",
+      "timestamp": "2026-05-08T02:54:32.697406"
+    },
+    {
+      "repo": "autotrain-advanced",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/autotrain-advanced-grype.json",
+      "timestamp": "2026-05-08T02:54:32.720684"
+    },
+    {
+      "repo": "accelerate",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/accelerate-grype.json",
+      "timestamp": "2026-05-08T02:54:32.736311"
+    },
+    {
+      "repo": "lerobot",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/lerobot-grype.json",
+      "timestamp": "2026-05-08T02:54:34.091657"
+    },
+    {
+      "repo": "ml-intern",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/ml-intern-grype.json",
+      "timestamp": "2026-05-08T02:54:34.127623"
+    },
+    {
+      "repo": "open-r1",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/open-r1-grype.json",
+      "timestamp": "2026-05-08T02:54:34.166510"
+    },
+    {
+      "repo": "nanoVLM",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/nanoVLM-grype.json",
+      "timestamp": "2026-05-08T02:54:34.186103"
+    },
+    {
+      "repo": "distil-whisper",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/distil-whisper-grype.json",
+      "timestamp": "2026-05-08T02:54:34.193945"
+    },
+    {
+      "repo": "peft",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/peft-grype.json",
+      "timestamp": "2026-05-08T02:54:35.505294"
+    },
+    {
+      "repo": "parler-tts",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/parler-tts-grype.json",
+      "timestamp": "2026-05-08T02:54:35.513099"
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/sentence-transformers-grype.json",
+      "timestamp": "2026-05-08T02:54:35.606606"
+    },
+    {
+      "repo": "pytorch-image-models",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/pytorch-image-models-grype.json",
+      "timestamp": "2026-05-08T02:54:35.637824"
+    },
+    {
+      "repo": "skills",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/skills-grype.json",
+      "timestamp": "2026-05-08T02:54:35.699241"
+    },
+    {
+      "repo": "smolagents",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/smolagents-grype.json",
+      "timestamp": "2026-05-08T02:54:36.982417"
+    },
+    {
+      "repo": "speech-to-speech",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/speech-to-speech-grype.json",
+      "timestamp": "2026-05-08T02:54:37.011113"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/text-generation-inference-grype.json",
+      "timestamp": "2026-05-08T02:54:37.055289"
+    },
+    {
+      "repo": "trl",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/trl-grype.json",
+      "timestamp": "2026-05-08T02:54:37.103023"
+    },
+    {
+      "repo": "transformers",
+      "status": "success",
+      "vulnerabilities": 0,
+      "output_file": "data/results/transformers-grype.json",
+      "timestamp": "2026-05-08T02:54:37.115869"
+    }
+  ],
+  "codeql": [
+    {
+      "repo": "datasets",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "diffusers",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "accelerate",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "autotrain-advanced",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "alignment-handbook",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "lerobot",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "nanoVLM",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "distil-whisper",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "ml-intern",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "open-r1",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "parler-tts",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "pytorch-image-models",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "peft",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "sentence-transformers",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "skills",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "text-generation-inference",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "smolagents",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "speech-to-speech",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "transformers",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    },
+    {
+      "repo": "trl",
+      "status": "skipped",
+      "reason": "no_supported_languages"
+    }
+  ]
+}

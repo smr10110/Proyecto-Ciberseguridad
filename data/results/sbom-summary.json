@@ -1,0 +1,122 @@
+[
+  {
+    "repo": "alignment-handbook",
+    "status": "success",
+    "output_file": "data/results/alignment-handbook-sbom.json",
+    "timestamp": "2026-05-08T02:52:57.955150"
+  },
+  {
+    "repo": "autotrain-advanced",
+    "status": "success",
+    "output_file": "data/results/autotrain-advanced-sbom.json",
+    "timestamp": "2026-05-08T02:52:57.974674"
+  },
+  {
+    "repo": "accelerate",
+    "status": "success",
+    "output_file": "data/results/accelerate-sbom.json",
+    "timestamp": "2026-05-08T02:52:57.977380"
+  },
+  {
+    "repo": "diffusers",
+    "status": "success",
+    "output_file": "data/results/diffusers-sbom.json",
+    "timestamp": "2026-05-08T02:52:58.124598"
+  },
+  {
+    "repo": "datasets",
+    "status": "success",
+    "output_file": "data/results/datasets-sbom.json",
+    "timestamp": "2026-05-08T02:52:58.193978"
+  },
+  {
+    "repo": "lerobot",
+    "status": "success",
+    "output_file": "data/results/lerobot-sbom.json",
+    "timestamp": "2026-05-08T02:53:00.472319"
+  },
+  {
+    "repo": "nanoVLM",
+    "status": "success",
+    "output_file": "data/results/nanoVLM-sbom.json",
+    "timestamp": "2026-05-08T02:53:00.775797"
+  },
+  {
+    "repo": "ml-intern",
+    "status": "success",
+    "output_file": "data/results/ml-intern-sbom.json",
+    "timestamp": "2026-05-08T02:53:00.917163"
+  },
+  {
+    "repo": "distil-whisper",
+    "status": "success",
+    "output_file": "data/results/distil-whisper-sbom.json",
+    "timestamp": "2026-05-08T02:53:00.974754"
+  },
+  {
+    "repo": "open-r1",
+    "status": "success",
+    "output_file": "data/results/open-r1-sbom.json",
+    "timestamp": "2026-05-08T02:53:01.133830"
+  },
+  {
+    "repo": "parler-tts",
+    "status": "success",
+    "output_file": "data/results/parler-tts-sbom.json",
+    "timestamp": "2026-05-08T02:53:03.063075"
+  },
+  {
+    "repo": "peft",
+    "status": "success",
+    "output_file": "data/results/peft-sbom.json",
+    "timestamp": "2026-05-08T02:53:03.395288"
+  },
+  {
+    "repo": "pytorch-image-models",
+    "status": "success",
+    "output_file": "data/results/pytorch-image-models-sbom.json",
+    "timestamp": "2026-05-08T02:53:03.672329"
+  },
+  {
+    "repo": "skills",
+    "status": "success",
+    "output_file": "data/results/skills-sbom.json",
+    "timestamp": "2026-05-08T02:53:03.724458"
+  },
+  {
+    "repo": "sentence-transformers",
+    "status": "success",
+    "output_file": "data/results/sentence-transformers-sbom.json",
+    "timestamp": "2026-05-08T02:53:03.732355"
+  },
+  {
+    "repo": "smolagents",
+    "status": "success",
+    "output_file": "data/results/smolagents-sbom.json",
+    "timestamp": "2026-05-08T02:53:05.650514"
+  },
+  {
+    "repo": "speech-to-speech",
+    "status": "success",
+    "output_file": "data/results/speech-to-speech-sbom.json",
+    "timestamp": "2026-05-08T02:53:05.803277"
+  },
+  {
+    "repo": "text-generation-inference",
+    "status": "success",
+    "output_file": "data/results/text-generation-inference-sbom.json",
+    "timestamp": "2026-05-08T02:53:06.122032"
+  },
+  {
+    "repo": "transformers",
+    "status": "success",
+    "output_file": "data/results/transformers-sbom.json",
+    "timestamp": "2026-05-08T02:53:06.197368"
+  },
+  {
+    "repo": "trl",
+    "status": "success",
+    "output_file": "data/results/trl-sbom.json",
+    "timestamp": "2026-05-08T02:53:06.331506"
+  }
+]

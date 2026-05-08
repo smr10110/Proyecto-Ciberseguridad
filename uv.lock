@@ -2410,7 +2410,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.0" },
     { name = "ipykernel", specifier = ">=6.0.0" },
     { name = "jupyter", specifier = ">=1.0.0" },
-    { name = "matplotlib", specifier = ">=3.10.9" },
+    { name = "matplotlib", specifier = ">=3.8.0" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.0.0" },
     { name = "pandas", specifier = ">=2.0.0" },
     { name = "pylint", marker = "extra == 'dev'", specifier = ">=3.0.0" },

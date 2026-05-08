@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-05-08T02:52:36.121217",
+  "total": 5,
+  "results": [
+    {
+      "repo": "transformers",
+      "url": "https://github.com/huggingface/transformers",
+      "status": "update_failed",
+      "path": "data/repos/transformers"
+    },
+    {
+      "repo": "open-r1",
+      "url": "https://github.com/huggingface/open-r1",
+      "status": "update_failed",
+      "path": "data/repos/open-r1"
+    },
+    {
+      "repo": "pytorch-image-models",
+      "url": "https://github.com/huggingface/pytorch-image-models",
+      "status": "update_failed",
+      "path": "data/repos/pytorch-image-models"
+    },
+    {
+      "repo": "diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "status": "update_failed",
+      "path": "data/repos/diffusers"
+    },
+    {
+      "repo": "smolagents",
+      "url": "https://github.com/huggingface/smolagents",
+      "status": "update_failed",
+      "path": "data/repos/smolagents"
+    }
+  ]
+}
