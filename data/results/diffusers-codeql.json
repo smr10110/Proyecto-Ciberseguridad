@@ -1,0 +1,47 @@
+{
+  "findings": [
+    {
+      "rule_id": "py/bind-socket-all-network-interfaces",
+      "severity": "error",
+      "name": "Binding a socket to all network interfaces",
+      "description": "Binding a socket to all interfaces (using [''](1)) is a security risk.",
+      "locations": [
+        {
+          "file": "tests/models/testing_utils/parallelism.py",
+          "startLine": 47,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/path-injection",
+      "severity": "error",
+      "name": "Uncontrolled data used in path expression",
+      "description": "This path depends on a [user-provided value](1).",
+      "locations": [
+        {
+          "file": "examples/server-async/serverasync.py",
+          "startLine": 199,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    },
+    {
+      "rule_id": "py/path-injection",
+      "severity": "error",
+      "name": "Uncontrolled data used in path expression",
+      "description": "This path depends on a [user-provided value](1).",
+      "locations": [
+        {
+          "file": "examples/server-async/serverasync.py",
+          "startLine": 201,
+          "endLine": 0
+        }
+      ],
+      "tool": "CodeQL"
+    }
+  ],
+  "total": 3
+}

@@ -1,51 +1,37 @@
 [
   {
-    "repo": "sentence-transformers",
+    "repo": "alignment-handbook",
     "status": "success",
     "vulnerabilities": 0,
-    "output_file": "data/results/sentence-transformers-grype.json",
-    "timestamp": "2026-05-08T04:29:55.968984"
+    "output_file": "data/results/alignment-handbook-grype.json",
+    "timestamp": "2026-05-08T05:38:00.079329"
   },
   {
-    "repo": "peft",
+    "repo": "accelerate",
     "status": "success",
-    "vulnerabilities": 8,
-    "output_file": "data/results/peft-grype.json",
-    "timestamp": "2026-05-08T04:29:56.355265"
+    "vulnerabilities": 2,
+    "output_file": "data/results/accelerate-grype.json",
+    "timestamp": "2026-05-08T05:38:00.268125"
   },
   {
-    "repo": "skills",
+    "repo": "autotrain-advanced",
     "status": "success",
-    "vulnerabilities": 0,
-    "output_file": "data/results/skills-grype.json",
-    "timestamp": "2026-05-08T04:29:58.067308"
+    "vulnerabilities": 43,
+    "output_file": "data/results/autotrain-advanced-grype.json",
+    "timestamp": "2026-05-08T05:38:00.314152"
   },
   {
-    "repo": "datasets",
+    "repo": "diffusers",
     "status": "success",
-    "vulnerabilities": 24,
-    "output_file": "data/results/datasets-grype.json",
-    "timestamp": "2026-05-08T04:29:59.410513"
+    "vulnerabilities": 98,
+    "output_file": "data/results/diffusers-grype.json",
+    "timestamp": "2026-05-08T05:38:00.570534"
   },
   {
-    "repo": "lerobot",
+    "repo": "dataset-viewer",
     "status": "success",
-    "vulnerabilities": 59,
-    "output_file": "data/results/lerobot-grype.json",
-    "timestamp": "2026-05-08T04:30:01.953432"
-  },
-  {
-    "repo": "text-generation-inference",
-    "status": "success",
-    "vulnerabilities": 442,
-    "output_file": "data/results/text-generation-inference-grype.json",
-    "timestamp": "2026-05-08T04:30:04.498735"
-  },
-  {
-    "repo": "trl",
-    "status": "success",
-    "vulnerabilities": 0,
-    "output_file": "data/results/trl-grype.json",
-    "timestamp": "2026-05-08T04:30:05.257246"
+    "vulnerabilities": 634,
+    "output_file": "data/results/dataset-viewer-grype.json",
+    "timestamp": "2026-05-08T05:38:02.115208"
   }
 ]

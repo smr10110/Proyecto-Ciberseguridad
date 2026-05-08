@@ -1,48 +1,36 @@
 {
-  "timestamp": "2026-05-08T04:25:04.671451",
-  "total": 7,
+  "timestamp": "2026-05-08T05:37:06.270711",
+  "total": 5,
   "results": [
     {
-      "repo": "lerobot",
-      "url": "https://github.com/huggingface/lerobot",
-      "status": "updated",
-      "path": "data/repos/lerobot"
+      "repo": "alignment-handbook",
+      "url": "https://github.com/huggingface/alignment-handbook",
+      "status": "cloned",
+      "path": "data/repos/alignment-handbook"
     },
     {
-      "repo": "sentence-transformers",
-      "url": "https://github.com/huggingface/sentence-transformers",
-      "status": "updated",
-      "path": "data/repos/sentence-transformers"
+      "repo": "autotrain-advanced",
+      "url": "https://github.com/huggingface/autotrain-advanced",
+      "status": "cloned",
+      "path": "data/repos/autotrain-advanced"
     },
     {
-      "repo": "trl",
-      "url": "https://github.com/huggingface/trl",
-      "status": "updated",
-      "path": "data/repos/trl"
+      "repo": "accelerate",
+      "url": "https://github.com/huggingface/accelerate",
+      "status": "cloned",
+      "path": "data/repos/accelerate"
     },
     {
-      "repo": "datasets",
-      "url": "https://github.com/huggingface/datasets",
-      "status": "updated",
-      "path": "data/repos/datasets"
+      "repo": "dataset-viewer",
+      "url": "https://github.com/huggingface/dataset-viewer",
+      "status": "cloned",
+      "path": "data/repos/dataset-viewer"
     },
     {
-      "repo": "peft",
-      "url": "https://github.com/huggingface/peft",
-      "status": "updated",
-      "path": "data/repos/peft"
-    },
-    {
-      "repo": "text-generation-inference",
-      "url": "https://github.com/huggingface/text-generation-inference",
-      "status": "updated",
-      "path": "data/repos/text-generation-inference"
-    },
-    {
-      "repo": "skills",
-      "url": "https://github.com/huggingface/skills",
-      "status": "updated",
-      "path": "data/repos/skills"
+      "repo": "diffusers",
+      "url": "https://github.com/huggingface/diffusers",
+      "status": "cloned",
+      "path": "data/repos/diffusers"
     }
   ]
 }
