@@ -140,6 +140,65 @@ async function loadData() {
   const fixableCount = allVulns.filter(v => v.fixState === 'fixed').length
   const fixPct = allVulns.length > 0 ? Math.round((fixableCount / allVulns.length) * 100) : 0
 
+  // Fix availability counts (for pie chart)
+  const fixCounts = { con: fixableCount, sin: allVulns.length - fixableCount }
+
+  // Fix availability by repo (for 5.4 chart)
+  const fixByRepoMap = {}
+  for (const v of allVulns) {
+    if (!fixByRepoMap[v.repo]) fixByRepoMap[v.repo] = { con: 0, sin: 0 }
+    if (v.fixState === 'fixed') fixByRepoMap[v.repo].con++
+    else fixByRepoMap[v.repo].sin++
+  }
+  const fixByRepo = Object.entries(fixByRepoMap)
+    .map(([repo, { con, sin }]) => ({ repo, con, sin, total: con + sin }))
+    .sort((a, b) => b.con - a.con)
+
+  // Grype by repo as sorted array (for 5.2 chart)
+  const grypeByRepoArr = Object.entries(repoVulnMap)
+    .map(([repo, counts]) => ({
+      repo,
+      total: (counts.Critical ?? 0) + (counts.High ?? 0) + (counts.Medium ?? 0) + (counts.Low ?? 0),
+      ...counts,
+    }))
+    .sort((a, b) => b.total - a.total)
+
+  // CodeQL by repo as sorted array (for 3.2 chart)
+  const codeqlByRepoArr = Object.entries(repoCodeqlMap)
+    .map(([repo, counts]) => ({
+      repo,
+      total: (counts.error ?? 0) + (counts.warning ?? 0) + (counts.note ?? 0),
+      ...counts,
+    }))
+    .sort((a, b) => b.total - a.total)
+
+  // CodeQL severity totals (for 3.1 chart)
+  const severityCodeQL = {
+    error:   allFindings.filter(f => f.severity === 'error').length,
+    warning: allFindings.filter(f => f.severity === 'warning').length,
+    note:    allFindings.filter(f => f.severity === 'note').length,
+  }
+
+  // Top 10 files most affected by CodeQL (for 3.4 chart)
+  const fileCount = {}
+  for (const f of allFindings) {
+    const loc = f.locations?.[0]
+    if (loc?.file) {
+      const short = loc.file.split('/').slice(-2).join('/')
+      fileCount[short] = (fileCount[short] ?? 0) + 1
+    }
+  }
+  const topFiles = Object.entries(fileCount)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 10)
+    .map(([file, count]) => ({ file, count }))
+
+  // Top critical unfixed CVEs for dashboard alert
+  const criticalUnfixed = Object.values(vulnById)
+    .filter(v => v.severity === 'Critical' && v.fixState !== 'fixed' && v.cvssScore > 0)
+    .sort((a, b) => b.cvssScore - a.cvssScore)
+    .slice(0, 5)
+
   const repos = [...new Set([
     ...grypeEntries.map(e => e.repo),
     ...codeqlEntries.map(e => e.repo),
@@ -160,6 +219,13 @@ async function loadData() {
     topRules,
     topHighPriorityVulns,
     fixPct,
+    fixCounts,
+    fixByRepo,
+    grypeByRepoArr,
+    codeqlByRepoArr,
+    severityCodeQL,
+    topFiles,
+    criticalUnfixed,
     stats: {
       repos: repos.length,
       totalVulns: allVulns.length,

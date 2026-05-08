@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import {
   LayoutDashboard, ShieldAlert, Code2, Package,
   RefreshCw, AlertCircle, Loader2, Shield,
@@ -25,12 +25,6 @@ function fmt(d) {
 export default function App() {
   const [page, setPage] = useState('dashboard')
   const { data, loading, error, lastUpdated, reload } = useData()
-
-  // 🕒 CONFIGURAR AUTO-REFRESH CADA 5 SEGUNDOS
-  useEffect(() => {
-    const intervalId = setInterval(reload, 5000);
-    return () => clearInterval(intervalId);
-  }, [reload]);
 
   return (
     <div className="grain flex h-screen overflow-hidden bg-base text-ink font-mono">
@@ -126,7 +120,7 @@ export default function App() {
         )}
 
         {data && (
-          <div className="animate-fade-in">
+          <div className="animate-fade-in h-full flex flex-col">
             {page === 'dashboard' && <Dashboard data={data} />}
             {page === 'vulnerabilities' && <VulnPage data={data} />}
             {page === 'codeql' && <CodeQLPage data={data} />}
