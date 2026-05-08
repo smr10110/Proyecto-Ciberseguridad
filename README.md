@@ -93,10 +93,16 @@ Editar `data/config.json`:
 
 ### 3. Ejecutar el Miner
 
+**Opcion A — CLI (recomendado):**
+
 ```bash
 # Pipeline completo: clone → sbom → grype → codeql → report
 uv run python main.py all
 ```
+
+**Opcion B — Notebook:**
+
+Abrir y ejecutar `nbs/00_pipeline_completo.ipynb` desde Jupyter dentro del Dev Container.
 
 ### 4. Abrir el Visualizer
 
