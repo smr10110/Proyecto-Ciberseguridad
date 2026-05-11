@@ -153,7 +153,10 @@ nbs/01_analisis_vulnerabilidades.ipynb
 | **Tailwind CSS** | Estilos |
 | **Lucide React** | Iconos |
 
----
+
+## Imagen del poster
+
+![alt text](docs/poster.jpeg)
 
 ## Licencia
 
